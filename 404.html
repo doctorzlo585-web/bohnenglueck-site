@@ -1,0 +1,2420 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Bohnenglück – Specialty Coffee &amp; Home Brewing aus Berlin</title>
+<meta name="description" content="Brührezepte mit exakten Mengen für V60, AeroPress, Espresso, Cold Brew, French Press und Chemex. Ein Home-Brewing-Journal von Lukas Weber aus Berlin.">
+<meta name="author" content="Lukas Weber">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://bohnenglueck-berlin.blog/">
+<meta name="theme-color" content="#F4ECDF">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Bohnenglück">
+<meta property="og:title" content="Bohnenglück – Specialty Coffee &amp; Home Brewing aus Berlin">
+<meta property="og:description" content="Brührezepte mit exakten Mengen für V60, AeroPress, Espresso, Cold Brew, French Press und Chemex – aus einer Berliner Küche.">
+<meta property="og:url" content="https://bohnenglueck-berlin.blog/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=75&amp;fm=jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Wasser fließt aus einem Schwanenhalskessel in einen Handfilter über einer Glaskanne">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23F4ECDF'/%3E%3Crect x='4' y='6' width='24' height='3' rx='1.5' fill='%232A1B12'/%3E%3Cpath d='M6 10.5h20l-6.6 10a2 2 0 0 1-1.7.9h-3.4a2 2 0 0 1-1.7-.9z' fill='%232A1B12'/%3E%3Cpath d='M16 23.6c1.3 1.6 2 2.7 2 3.4a2 2 0 0 1-4 0c0-.7.7-1.8 2-3.4z' fill='%238A9C84'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" media="(min-width: 900px)" href="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=720&amp;h=900&amp;q=70" imagesrcset="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=480&amp;h=600&amp;q=70 480w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=720&amp;h=900&amp;q=70 720w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=960&amp;h=1200&amp;q=70 960w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=1200&amp;h=1500&amp;q=70 1200w" imagesizes="(min-width: 1280px) 460px, 36vw" fetchpriority="high">
+<link rel="preload" as="image" media="(max-width: 899.98px)" href="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=800&amp;h=533&amp;q=70" imagesrcset="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=480&amp;h=320&amp;q=70 480w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=800&amp;h=533&amp;q=70 800w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=70 1200w" imagesizes="(min-width: 640px) calc(100vw - 96px), calc(100vw - 40px)" fetchpriority="high">
+<script>(function (d, w) {
+  var root = d.documentElement;
+  root.className = root.className.replace(/\bno-js\b/, 'js');
+  var KBJ = (w.KBJ = w.KBJ || {});
+  var waiting = [];
+  KBJ.consented = false;
+  /* Run fn only after the visitor clicked "Akzeptieren" (immediately if consent is already stored). */
+  KBJ.onConsent = function (fn) {
+    if (typeof fn !== 'function') return;
+    if (KBJ.consented) { try { fn(); } catch (e) { /* vendor error must not break the page */ } }
+    else waiting.push(fn);
+  };
+  KBJ.grantConsent = function () {
+    KBJ.consented = true;
+    while (waiting.length) { try { waiting.shift()(); } catch (e) { /* ignore */ } }
+  };
+  var FONTS = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap';
+  KBJ.loadFonts = function () {
+    if (d.getElementById('gfonts')) return;
+    var pre = d.createElement('link');
+    pre.rel = 'preconnect';
+    pre.href = 'https://fonts.gstatic.com';
+    pre.crossOrigin = 'anonymous';
+    d.head.appendChild(pre);
+    var css = d.createElement('link');
+    css.id = 'gfonts';
+    css.rel = 'stylesheet';
+    css.href = FONTS;
+    d.head.appendChild(css);
+    root.classList.add('fonts-ok');
+  };
+  KBJ.unloadFonts = function () {
+    var css = d.getElementById('gfonts');
+    if (css) css.parentNode.removeChild(css);
+    root.classList.remove('fonts-ok');
+  };
+  try {
+    var c = JSON.parse(w.localStorage.getItem('kbj-consent') || 'null');
+    if (c && c.v === 1 && c.fonts === true) { KBJ.consented = true; KBJ.loadFonts(); }
+  } catch (e) { /* Speicher blockiert: Systemschriften bleiben aktiv */ }
+})(document, window);</script>
+<style>/* ============================================================
+   Bohnenglück – Styles
+   Palette: Filterpapier (Creme), Espresso, Salbei
+   ============================================================ */
+@font-face{font-family:"Playfair Display Fallback";src:local("Georgia");ascent-override:106.716%;descent-override:24.7558%;line-gap-override:0%;size-adjust:101.3906%}
+@font-face{font-family:"Inter Fallback";src:local("Arial"),local("ArialMT");ascent-override:90.4365%;descent-override:22.518%;line-gap-override:0%;size-adjust:107.1194%}
+
+:root{
+  --paper:#F4ECDF;
+  --paper-deep:#EADFCB;
+  --milk:#FBF7F1;
+  --espresso:#2A1B12;
+  --espresso-2:#3B281C;
+  --roast:#5E3E2B;
+  --muted:#6F5948;
+  --sage:#8A9C84;
+  --sage-ink:#4A5D49;
+  --sage-mist:#DCE3D4;
+  --line:rgba(42,27,18,.14);
+  --line-strong:rgba(42,27,18,.3);
+
+  --font-display:Georgia,"Times New Roman","Noto Serif",serif;
+  --font-body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+  --t-xs:.8125rem;
+  --t-sm:.9375rem;
+  --t-base:1.0625rem;
+  --t-lg:clamp(1.125rem,1.05rem + .35vw,1.3125rem);
+  --t-xl:clamp(1.3125rem,1.2rem + .5vw,1.625rem);
+  --t-2xl:clamp(1.875rem,1.35rem + 2vw,2.875rem);
+  --t-3xl:clamp(2.5rem,1.35rem + 4.6vw,5rem);
+
+  --wrap:1180px;
+  --gutter:clamp(20px,5vw,48px);
+  --section:clamp(64px,9vw,128px);
+
+  --r-img:3px;
+  --r-btn:999px;
+  --r-field:10px;
+  --r-card:12px;
+  --r-panel:18px;
+
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --shadow-float:0 22px 48px -22px rgba(42,27,18,.5);
+  color-scheme:light;
+}
+.fonts-ok{
+  --font-display:"Playfair Display","Playfair Display Fallback",Georgia,serif;
+  --font-body:"Inter","Inter Fallback",system-ui,sans-serif;
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:96px;scrollbar-gutter:stable}
+html.is-locked{overflow:hidden}
+body{margin:0;min-height:100vh;background:var(--paper);color:var(--espresso);font-family:var(--font-body);font-size:var(--t-base);line-height:1.65;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+img,svg{display:block;max-width:100%}
+img{height:auto}
+h1,h2,h3,h4{margin:0;font-family:var(--font-display);font-weight:600;line-height:1.12;letter-spacing:-.012em;text-wrap:balance}
+p,ul,ol,dl,dd,figure,blockquote{margin:0}
+ul,ol{padding:0}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:1px}
+button,input,select,textarea{font:inherit;color:inherit;letter-spacing:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--sage-ink);outline-offset:3px}
+::selection{background:var(--sage-mist);color:var(--espresso)}
+.icon{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.wrap{width:100%;max-width:calc(var(--wrap) + 2*var(--gutter));margin-inline:auto;padding-inline:var(--gutter)}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.skip-link{position:absolute;left:var(--gutter);top:-100px;z-index:100;background:var(--espresso);color:var(--paper);padding:.75rem 1rem;border-radius:var(--r-field);text-decoration:none;font-weight:600}
+.skip-link:focus{top:12px}
+
+/* ---------- Buttons & links ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:48px;padding:.7rem 1.35rem;border:1.5px solid transparent;border-radius:var(--r-btn);font-size:var(--t-sm);font-weight:600;line-height:1.2;text-decoration:none;white-space:nowrap;transition:background-color .2s,border-color .2s,color .2s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn--primary{background:var(--espresso);color:var(--paper)}
+.btn--primary:hover{background:var(--espresso-2)}
+.btn--ghost{background:transparent;border-color:var(--line-strong);color:var(--espresso)}
+.btn--ghost:hover{border-color:var(--espresso)}
+.btn--small{min-height:40px;padding:.5rem 1rem;font-size:var(--t-xs)}
+.btn--quiet{background:transparent;color:var(--roast);border-color:transparent;text-decoration:underline;text-underline-offset:.2em}
+.btn--quiet:hover{color:var(--espresso)}
+.btn[disabled]{opacity:.6;cursor:progress}
+.text-link{color:var(--sage-ink);font-weight:600;text-decoration:underline;text-decoration-color:rgba(74,93,73,.4)}
+.text-link:hover{text-decoration-color:currentColor}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:0;z-index:40;background:rgba(244,236,223,.9);-webkit-backdrop-filter:saturate(1.3) blur(12px);backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid transparent;transition:border-color .25s}
+.site-header.is-scrolled{border-bottom-color:var(--line)}
+.header__bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:inline-flex;align-items:center;gap:.65rem;text-decoration:none;color:var(--espresso)}
+.brand__mark{width:34px;height:34px}
+.brand__text{display:flex;flex-direction:column;line-height:1}
+.brand__name{font-family:var(--font-display);font-size:1.3rem;font-weight:700;letter-spacing:-.01em}
+.brand__sub{margin-top:.28rem;font-size:.75rem;font-weight:500;color:var(--muted);letter-spacing:.01em}
+.nav__list{display:flex;gap:.15rem;list-style:none}
+.nav__link{position:relative;display:block;padding:.65rem .9rem;border-radius:8px;color:var(--roast);font-size:var(--t-sm);font-weight:500;text-decoration:none;transition:color .2s}
+.nav__link::after{content:"";position:absolute;left:.9rem;right:.9rem;bottom:.38rem;height:2px;border-radius:2px;background:var(--sage-ink);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav__link:hover{color:var(--espresso)}
+.nav__link[aria-current="page"]{color:var(--espresso)}
+.nav__link[aria-current="page"]::after{transform:scaleX(1)}
+.nav-toggle{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-8px;border:0;border-radius:50%;background:transparent;color:var(--espresso)}
+.nav-toggle .icon{width:26px;height:26px}
+.nav-toggle .icon--close{display:none}
+.nav-toggle[aria-expanded="true"] .icon--menu{display:none}
+.nav-toggle[aria-expanded="true"] .icon--close{display:block}
+@media (max-width:819px){
+  .nav-toggle{display:inline-flex}
+  .nav{position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 24px 40px -28px rgba(42,27,18,.45);visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .22s var(--ease),transform .22s var(--ease),visibility 0s linear .22s}
+  .nav.is-open{visibility:visible;opacity:1;transform:none;transition-delay:0s}
+  .nav__list{flex-direction:column;gap:0;padding:.5rem var(--gutter) 1.25rem}
+  .nav__link{padding:.95rem 0;font-family:var(--font-display);font-size:1.375rem;font-weight:600;color:var(--espresso);border-bottom:1px solid var(--line);border-radius:0}
+  .nav__item:last-child .nav__link{border-bottom:0}
+  .nav__link::after{left:0;right:auto;width:2.25rem;bottom:.55rem}
+}
+
+/* ---------- Views ---------- */
+.js .view{display:none}
+.js .view.is-active{display:block}
+.view.is-entering{animation:viewIn .38s var(--ease) both}
+@keyframes viewIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.view-title:focus{outline:none}
+.section{padding-block:var(--section)}
+.section__head{display:grid;gap:1rem;max-width:44rem;margin-bottom:clamp(36px,5vw,56px)}
+.section__head h2{font-size:var(--t-2xl)}
+.section__head p{color:var(--roast);font-size:var(--t-lg);line-height:1.55}
+.page-head{padding-block:clamp(40px,7vw,96px) clamp(28px,4vw,48px)}
+.page-head h1{font-size:var(--t-3xl);line-height:1.04;letter-spacing:-.02em;max-width:14ch}
+.page-head .lead{margin-top:1.25rem}
+.lead{font-size:var(--t-lg);line-height:1.55;color:var(--roast);max-width:38rem}
+
+/* ---------- Hero ---------- */
+.hero{padding-block:clamp(28px,5.5vw,80px) clamp(56px,7vw,104px)}
+.hero__grid{display:grid;gap:clamp(36px,5vw,80px);align-items:center}
+.hero__title{font-size:var(--t-3xl);line-height:1.03;letter-spacing:-.022em;max-width:13.5ch}
+.hero__lead{margin-top:1.6rem}
+.hero__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.1rem}
+.hero__media{position:relative}
+.hero__img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r-img);background:var(--paper-deep)}
+.recipe-card{position:relative;z-index:1;margin:-44px 16px 0;padding:1.1rem 1.25rem 1.15rem;background:var(--milk);border-radius:var(--r-card);box-shadow:var(--shadow-float)}
+.recipe-card__title{font-family:var(--font-display);font-size:1.125rem;font-weight:600;line-height:1.2}
+.recipe-card__sub{font-size:var(--t-xs);color:var(--muted)}
+.recipe-card__list{display:grid;gap:.45rem;margin-top:.85rem;padding-top:.85rem;border-top:1px solid var(--line)}
+.recipe-card__list div{display:grid;grid-template-columns:5.25rem 1fr;align-items:baseline;gap:.75rem}
+.recipe-card__list dt{font-family:var(--font-display);font-style:italic;font-weight:500;color:var(--sage-ink)}
+.recipe-card__list dd{font-size:var(--t-sm);font-weight:600;font-variant-numeric:tabular-nums}
+.recipe-card__link{display:inline-block;margin-top:.9rem;font-size:var(--t-sm)}
+@media (min-width:900px){
+  .hero__grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+  .hero__img{aspect-ratio:4/5}
+  .recipe-card{position:absolute;left:-56px;bottom:36px;margin:0;width:min(300px,80%)}
+}
+
+/* ---------- Grind scale (signature) ---------- */
+.grind{padding-block:clamp(56px,7vw,96px);background:var(--paper-deep)}
+.grind__head{display:grid;gap:1rem;max-width:44rem}
+.grind__head h2{font-size:var(--t-2xl)}
+.grind__head p{color:var(--roast);font-size:var(--t-lg);line-height:1.55}
+.grind__scale{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,28px) clamp(8px,2vw,24px);margin-top:clamp(32px,4vw,48px);list-style:none}
+.grind__link{display:grid;justify-items:center;gap:.2rem;padding:.25rem .25rem .5rem;border-radius:var(--r-card);text-align:center;text-decoration:none;color:var(--espresso)}
+.grind__slot{display:block;width:min(128px,100%);aspect-ratio:1/1;margin-bottom:.7rem;transition:transform .35s var(--ease)}
+.grind__swatch{display:block;width:100%;height:100%}
+.grind__link:hover .grind__slot,.grind__link:focus-visible .grind__slot{transform:scale(1.05) rotate(-4deg)}
+.grind__method{font-weight:600;font-size:var(--t-sm)}
+.grind__link:hover .grind__method{text-decoration:underline;text-underline-offset:.2em}
+.grind__word{font-size:var(--t-xs);color:var(--muted)}
+.grind__axis{display:flex;align-items:center;gap:.9rem;margin-top:1.4rem;font-size:var(--t-xs);font-weight:600;color:var(--muted)}
+.grind__axis::before{content:"";order:1;flex:1;height:1px;background:linear-gradient(90deg,var(--line-strong),var(--line-strong)) center/100% 1px no-repeat}
+.grind__axis span:last-child{order:2}
+.js .grind .grain{opacity:0}
+.js .grind.is-poured .grain{opacity:1}
+.js .grind.is-pouring .grain{opacity:1;animation:grains .7s var(--ease) both;animation-delay:calc(var(--i,0) * 110ms + 150ms)}
+@keyframes grains{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (min-width:640px){.grind__scale{grid-template-columns:repeat(6,minmax(0,1fr))}}
+
+/* ---------- Guide cards ---------- */
+.guide{position:relative;display:grid;align-content:start;gap:1.1rem}
+.guide__media{overflow:hidden;border-radius:var(--r-img);background:var(--paper-deep)}
+.guide__media img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.guide__body{display:grid;align-content:start;gap:.55rem}
+.guide__cat{font-size:var(--t-xs);font-weight:600;color:var(--sage-ink)}
+.guide__title{font-size:var(--t-xl);line-height:1.2}
+.guide__title a{text-decoration:none}
+.guide__title a::after{content:"";position:absolute;inset:0;z-index:1}
+.guide:hover .guide__title a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.16em}
+.guide__title a:focus-visible{outline:none}
+.guide:focus-within{outline:2px solid var(--sage-ink);outline-offset:8px;border-radius:4px}
+.guide__excerpt{color:var(--roast);font-size:var(--t-sm);line-height:1.6}
+.facts{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:.5rem;padding-top:.85rem;border-top:1px solid var(--line)}
+.facts div{display:grid;gap:.1rem}
+.facts dt{font-size:.75rem;color:var(--muted)}
+.facts dd{display:flex;align-items:center;gap:.45rem;font-size:var(--t-sm);font-weight:600;font-variant-numeric:tabular-nums}
+.dots{width:56px;height:11px;flex:none}
+.dots circle{fill:rgba(42,27,18,.2)}
+.dots .is-on{fill:var(--sage-ink)}
+
+.featured__grid{display:grid;gap:clamp(36px,4vw,48px)}
+.featured__more{margin-top:clamp(36px,4vw,48px)}
+.guide--row{grid-template-columns:112px minmax(0,1fr);gap:1.1rem;align-items:start}
+.guide--row .guide__media img{aspect-ratio:1/1}
+.guide--row .guide__title{font-size:1.25rem}
+.guide--row .guide__excerpt{display:none}
+@media (min-width:560px){.guide--row .guide__excerpt{display:block}}
+@media (min-width:900px){
+  .featured__grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-rows:auto auto;column-gap:clamp(40px,5vw,72px)}
+  .guide--lg{grid-row:1 / span 2}
+  .guide--lg .guide__title{font-size:var(--t-2xl)}
+  .guide--lg .guide__excerpt{font-size:var(--t-base);max-width:38rem}
+  .guide--row{grid-template-columns:minmax(120px,40%) minmax(0,1fr);gap:1.4rem}
+  .guide--row + .guide--row{padding-top:clamp(36px,4vw,48px);border-top:1px solid var(--line)}
+}
+
+/* ---------- Blog view ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem}
+.filter{display:inline-flex;align-items:center;gap:.55rem;min-height:44px;padding:.5rem 1.05rem;border:1.5px solid var(--line-strong);border-radius:var(--r-btn);background:transparent;font-size:var(--t-sm);font-weight:600;color:var(--espresso);transition:background-color .2s,color .2s,border-color .2s}
+.filter:hover{border-color:var(--espresso)}
+.filter[aria-pressed="true"]{background:var(--espresso);border-color:var(--espresso);color:var(--paper)}
+.filter__count{font-size:var(--t-xs);font-weight:500;opacity:.72;font-variant-numeric:tabular-nums}
+.guides-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:clamp(44px,5vw,64px) clamp(24px,3vw,40px);padding-bottom:var(--section)}
+.guides-grid .guide.is-entering{animation:viewIn .35s var(--ease) both}
+.js .js-fallback{display:none}
+.noscript-note{margin-bottom:var(--section);padding:1rem 1.25rem;border:1px solid var(--line);border-radius:var(--r-card);background:var(--milk)}
+
+/* ---------- Comments ---------- */
+.comments{background:var(--paper-deep)}
+.comments__grid{display:grid;gap:clamp(40px,5vw,72px)}
+.comments__intro{display:grid;align-content:start;gap:1rem}
+.comments__intro h2{font-size:var(--t-2xl)}
+.comments__intro > p{color:var(--roast);font-size:var(--t-lg);line-height:1.55;max-width:34rem}
+.comment-list{display:grid;gap:1.75rem;margin-top:1.25rem;list-style:none}
+.comment{display:grid;gap:.4rem;padding-top:1.25rem;border-top:1px solid var(--line)}
+.comment__meta{display:flex;flex-wrap:wrap;gap:.35rem 1rem;font-size:var(--t-xs);color:var(--muted)}
+.comment__name{font-weight:600;color:var(--espresso)}
+.comment__text{white-space:pre-line}
+.empty{display:grid;justify-items:start;gap:.5rem;margin-top:1.5rem;padding:1.5rem;border:1.5px dashed var(--line-strong);border-radius:var(--r-card)}
+.empty .icon{width:36px;height:36px;color:var(--sage-ink);margin-bottom:.25rem}
+.empty__title{font-weight:600}
+.empty__text{color:var(--roast);font-size:var(--t-sm)}
+@media (min-width:900px){.comments__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+
+/* ---------- Forms ---------- */
+.panel{padding:clamp(22px,3.5vw,36px);background:var(--milk);border-radius:var(--r-panel);border:1px solid var(--line)}
+.panel__title{font-size:var(--t-xl);margin-bottom:1.25rem}
+.form{display:grid;gap:1.15rem}
+.field{display:grid;gap:.4rem}
+.field__label{font-size:var(--t-sm);font-weight:600}
+.field__hint{font-size:var(--t-xs);color:var(--muted)}
+.field__input{width:100%;min-height:48px;padding:.7rem .9rem;border:1.5px solid var(--line-strong);border-radius:var(--r-field);background:#fff;font-size:1rem;transition:border-color .2s,box-shadow .2s}
+.field__input:hover{border-color:rgba(42,27,18,.45)}
+.field__input:focus{outline:none;border-color:var(--sage-ink);box-shadow:0 0 0 3px rgba(74,93,73,.22)}
+.field__input[aria-invalid="true"]{border-color:#9B3B2E}
+textarea.field__input{min-height:132px;resize:vertical;line-height:1.55}
+select.field__input{appearance:none;-webkit-appearance:none;padding-right:2.5rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%232A1B12' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 8 5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .85rem center;background-size:18px}
+.field__error{font-size:var(--t-xs);font-weight:600;color:#8A3427}
+.field__error:empty{display:none}
+.form__note{font-size:var(--t-xs);color:var(--muted);line-height:1.5}
+.form__note a{color:var(--sage-ink)}
+.form__status{padding:.8rem 1rem;border-radius:var(--r-field);background:#F6E3DD;color:#6E2A20;font-size:var(--t-sm)}
+.form__actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-success{display:grid;gap:.75rem;justify-items:start}
+.form-success .icon{width:40px;height:40px;padding:8px;border-radius:50%;background:var(--sage-mist);color:var(--sage-ink)}
+.form-success__title{font-size:var(--t-xl)}
+.form-success__title:focus{outline:none}
+.form-success__text{color:var(--roast)}
+
+/* ---------- FAQ ---------- */
+.faq__grid{display:grid;gap:clamp(32px,5vw,72px)}
+.faq__intro{display:grid;align-content:start;gap:1rem}
+.faq__intro h2{font-size:var(--t-2xl)}
+.faq__intro p{color:var(--roast);font-size:var(--t-lg);line-height:1.55}
+.faq__intro .text-link{font-size:var(--t-base)}
+.acc{border-top:1px solid var(--line)}
+.acc:last-child{border-bottom:1px solid var(--line)}
+.acc__h{font-family:var(--font-body);font-size:inherit;font-weight:inherit;letter-spacing:0}
+.acc__btn{display:flex;align-items:center;justify-content:space-between;gap:1.25rem;width:100%;padding:1.25rem 0;border:0;background:transparent;text-align:left;font-size:var(--t-base);font-weight:600;line-height:1.4}
+.acc__btn:hover{color:var(--sage-ink)}
+.acc__chev{width:22px;height:22px;transition:transform .3s var(--ease)}
+.acc.is-open .acc__chev{transform:rotate(180deg)}
+.acc__panel{color:var(--roast)}
+.acc__inner{padding-bottom:1.35rem;max-width:40rem}
+.acc__inner p + p{margin-top:.75rem}
+.js .acc__panel{display:grid;grid-template-rows:0fr;visibility:hidden;transition:grid-template-rows .32s var(--ease),visibility 0s linear .32s}
+.js .acc.is-open .acc__panel{grid-template-rows:1fr;visibility:visible;transition-delay:0s}
+.js .acc__inner{overflow:hidden;min-height:0}
+@media (min-width:900px){
+  .faq__grid{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+  .faq__intro{position:sticky;top:112px;align-self:start}
+}
+
+/* ---------- About ---------- */
+.about-hero{display:grid;gap:clamp(32px,5vw,72px);align-items:end;padding-block:clamp(40px,7vw,96px) clamp(48px,6vw,88px)}
+.about-hero h1{font-size:var(--t-3xl);line-height:1.04;letter-spacing:-.02em}
+.about-hero .lead{margin-top:1.4rem}
+.about-hero__img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-img);background:var(--paper-deep)}
+.story{display:grid;gap:clamp(40px,6vw,88px);padding-bottom:var(--section)}
+.prose{max-width:38rem}
+.prose h2{font-size:var(--t-2xl);margin-bottom:1.1rem}
+.prose h2:not(:first-child){margin-top:clamp(40px,5vw,64px)}
+.prose p{font-size:1.125rem;line-height:1.72}
+.prose p + p{margin-top:1.1rem}
+.pull{margin:clamp(32px,4vw,48px) 0;padding-left:1.5rem;border-left:3px solid var(--sage)}
+.pull p{font-family:var(--font-display);font-style:italic;font-weight:500;font-size:var(--t-xl);line-height:1.35;color:var(--espresso)}
+.story__figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-img);background:var(--paper-deep)}
+.story__figure figcaption{margin-top:.75rem;font-size:var(--t-xs);color:var(--muted)}
+.principles{background:var(--paper-deep)}
+.principles h2{font-size:var(--t-2xl);margin-bottom:clamp(32px,4vw,48px)}
+.principles__list{display:grid;gap:0 clamp(32px,5vw,72px);list-style:none}
+.principle{padding-block:1.6rem;border-top:1px solid var(--line-strong)}
+.principle h3{font-size:var(--t-xl);margin-bottom:.5rem}
+.principle p{color:var(--roast)}
+.cta-band{padding-block:var(--section)}
+.cta-band__inner{display:grid;gap:1.25rem;justify-items:start}
+.cta-band h2{font-size:var(--t-2xl);max-width:18ch}
+.cta-band p{color:var(--roast);font-size:var(--t-lg);max-width:36rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}
+@media (min-width:900px){
+  .about-hero{grid-template-columns:minmax(0,6fr) minmax(0,6fr)}
+  .story{grid-template-columns:minmax(0,7fr) minmax(0,4fr);align-items:start}
+  .story__figure{position:sticky;top:112px;margin-top:.5rem}
+  .principles__list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* ---------- Contact ---------- */
+.contact{display:grid;gap:clamp(40px,6vw,88px);padding-block:clamp(40px,7vw,96px) var(--section)}
+.contact h1{font-size:var(--t-3xl);line-height:1.04;letter-spacing:-.02em}
+.contact .lead{margin-top:1.4rem}
+.contact__details{display:grid;gap:1.1rem;margin-top:2.25rem}
+.contact__details div{display:grid;grid-template-columns:auto 1fr;gap:.25rem .9rem;align-items:start}
+.contact__details .icon{grid-row:span 2;width:22px;height:22px;margin-top:.15rem;color:var(--sage-ink)}
+.contact__details dt{font-size:var(--t-xs);color:var(--muted)}
+.contact__details dd{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .8rem;font-weight:600}
+.copy-btn{display:inline-flex;align-items:center;gap:.4rem;min-height:36px;padding:.3rem .75rem;border:1.5px solid var(--line-strong);border-radius:var(--r-btn);background:transparent;font-size:var(--t-xs);font-weight:600}
+.copy-btn:hover{border-color:var(--espresso)}
+.copy-btn .icon{width:16px;height:16px}
+.contact__media{margin-top:2.5rem}
+.contact__media img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r-img);background:var(--paper-deep)}
+@media (min-width:900px){.contact{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start}.contact__form{position:sticky;top:112px}}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--espresso);color:#E9DECD;padding-block:clamp(56px,7vw,88px) 2rem}
+.site-footer a{color:#F4ECDF}
+.footer__grid{display:grid;gap:2.5rem}
+.footer__brand .brand{color:var(--paper)}
+.footer__brand .brand__sub{color:#BFAE98}
+.footer__brand p{margin-top:1.1rem;max-width:24rem;color:#CDBBA6;font-size:var(--t-sm)}
+.footer__h{margin-bottom:.9rem;font-family:var(--font-body);font-size:var(--t-xs);font-weight:600;letter-spacing:.02em;color:#BFAE98}
+.footer__list{display:grid;gap:.55rem;list-style:none;font-size:var(--t-sm)}
+.footer__list a{text-decoration:none}
+.footer__list a:hover{text-decoration:underline}
+.footer__btn{padding:0;border:0;background:none;color:#F4ECDF;font-size:var(--t-sm);text-align:left}
+.footer__btn:hover{text-decoration:underline;text-underline-offset:.18em}
+.footer__bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem 2rem;margin-top:clamp(40px,5vw,64px);padding-top:1.5rem;background:linear-gradient(rgba(244,236,223,.16),rgba(244,236,223,.16)) center top/calc(100% - 2*var(--gutter)) 1px no-repeat;font-size:var(--t-xs);color:#BFAE98}
+.site-footer :focus-visible{outline-color:#C9D6C2}
+@media (min-width:720px){.footer__grid{grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr))}}
+
+/* ---------- Modal ---------- */
+.modal{width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;color:var(--espresso);overflow-y:auto;overscroll-behavior:contain}
+.modal::backdrop{background:rgba(31,20,13,.62);opacity:0;transition:opacity .24s ease}
+.modal.is-open::backdrop{opacity:1}
+.modal__panel{position:relative;min-height:100%;background:var(--milk);opacity:0;transform:translateY(28px);transition:opacity .24s var(--ease),transform .24s var(--ease)}
+.modal.is-open .modal__panel{opacity:1;transform:none}
+.modal__close{position:sticky;top:12px;z-index:3;float:right;display:grid;place-items:center;width:44px;height:44px;margin:12px 12px -56px 0;border:1px solid var(--line);border-radius:50%;background:rgba(251,247,241,.94);color:var(--espresso);box-shadow:0 6px 18px -8px rgba(42,27,18,.4)}
+.modal__close:hover{background:#fff}
+.modal__close .icon{width:22px;height:22px}
+@media (min-width:760px){
+  .modal{padding:clamp(24px,5vh,64px) 24px}
+  .modal__panel{max-width:880px;min-height:0;margin-inline:auto;border-radius:var(--r-panel);overflow:clip}
+  .modal[data-kind="legal"] .modal__panel{max-width:760px}
+}
+
+/* Article */
+.article__media img{width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--paper-deep)}
+.article__body{display:grid;gap:clamp(28px,4vw,40px);max-width:680px;margin-inline:auto;padding:clamp(28px,5vw,48px) var(--gutter) clamp(36px,6vw,56px)}
+.article__cat{font-size:var(--t-xs);font-weight:600;color:var(--sage-ink)}
+.article__title{margin-top:.5rem;font-size:var(--t-2xl);line-height:1.1}
+.article__title:focus{outline:none}
+.article__meta{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:.9rem;list-style:none;font-size:var(--t-sm);color:var(--muted)}
+.article__meta strong{color:var(--espresso);font-weight:600}
+.article__intro p{font-size:1.125rem;line-height:1.72}
+.article__intro p + p{margin-top:1rem}
+.article h3{font-size:var(--t-xl);margin-bottom:1rem}
+.recipe{padding:clamp(20px,3vw,28px);background:var(--paper);border-radius:var(--r-card)}
+.recipe__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1.1rem 1.5rem}
+.recipe__grid div{display:grid;gap:.15rem}
+.recipe__grid dt{font-size:.75rem;color:var(--muted)}
+.recipe__grid dd{display:flex;align-items:center;gap:.5rem;font-weight:600;font-variant-numeric:tabular-nums}
+.checklist{display:grid;gap:.6rem;list-style:none}
+.checklist li{display:grid;grid-template-columns:22px 1fr;gap:.7rem;align-items:start}
+.checklist .icon{width:20px;height:20px;margin-top:.2rem;color:var(--sage-ink)}
+.steps{display:grid;list-style:none;counter-reset:step}
+.step{position:relative;display:grid;grid-template-columns:2.5rem 1fr;gap:0 1rem;padding-bottom:1.6rem}
+.step::before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:2.5rem;height:2.5rem;border-radius:50%;background:var(--espresso);color:var(--paper);font-weight:600;font-size:var(--t-sm);font-variant-numeric:tabular-nums}
+.step::after{content:"";position:absolute;left:calc(1.25rem - .5px);top:2.75rem;bottom:.25rem;width:1px;background:var(--line-strong)}
+.step:last-child{padding-bottom:0}
+.step:last-child::after{display:none}
+.step__body{display:grid;gap:.3rem;padding-top:.35rem}
+.step__time{justify-self:start;padding:.1rem .55rem;border-radius:var(--r-btn);background:var(--sage-mist);color:var(--sage-ink);font-size:.75rem;font-weight:600;font-variant-numeric:tabular-nums}
+.step__title{font-family:var(--font-body);font-size:var(--t-base);font-weight:600;letter-spacing:0}
+.step__text{color:var(--roast)}
+.fixes{display:grid;gap:0}
+.fixes div{display:grid;gap:.25rem;padding-block:1rem;border-top:1px solid var(--line)}
+.fixes div:last-child{border-bottom:1px solid var(--line)}
+.fixes dt{font-weight:600}
+.fixes dd{color:var(--roast)}
+@media (min-width:640px){.fixes div{grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:1.5rem}}
+.tip{padding:clamp(20px,3vw,28px);border-radius:var(--r-card);background:var(--espresso);color:var(--paper)}
+.tip__label{font-size:var(--t-xs);font-weight:600;color:#C9D6C2}
+.tip__text{margin-top:.5rem;font-family:var(--font-display);font-style:italic;font-weight:500;font-size:var(--t-xl);line-height:1.35}
+.article__foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 1.5rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+
+/* Legal */
+.legal{max-width:640px;margin-inline:auto;padding:clamp(48px,7vw,72px) var(--gutter) clamp(40px,6vw,64px)}
+.legal h2{font-size:var(--t-2xl);margin-bottom:.4rem}
+.legal h2:focus{outline:none}
+.legal h3{margin-top:2rem;margin-bottom:.5rem;font-family:var(--font-body);font-size:var(--t-base);font-weight:600;letter-spacing:0}
+.legal p,.legal li{font-size:var(--t-sm);line-height:1.7;color:var(--roast)}
+.legal p + p{margin-top:.7rem}
+.legal ul{display:grid;gap:.35rem;margin-top:.6rem;padding-left:1.15rem}
+.legal address{font-style:normal;font-size:var(--t-sm);line-height:1.7;color:var(--espresso)}
+.legal__stand{font-size:var(--t-xs)!important;color:var(--muted)!important}
+.legal a{color:var(--sage-ink)}
+
+/* ---------- Consent bar ---------- */
+.consent{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:grid;gap:.9rem;max-width:760px;margin-inline:auto;padding:1rem 1.1rem;background:var(--milk);border:1px solid var(--line);border-radius:var(--r-card);box-shadow:0 18px 44px -18px rgba(42,27,18,.45);opacity:0;transform:translateY(16px);transition:opacity .3s var(--ease),transform .3s var(--ease)}
+.consent.is-visible{opacity:1;transform:none}
+.consent__text{font-size:var(--t-xs);line-height:1.55;color:var(--roast)}
+.consent__text a{color:var(--sage-ink);font-weight:600}
+.consent__actions{display:flex;justify-content:flex-end;gap:.5rem}
+@media (min-width:640px){.consent{grid-template-columns:1fr auto;align-items:center;gap:1.25rem;padding:.9rem .9rem .9rem 1.25rem}}
+
+/* ---------- Motion preferences ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.01ms!important;transition-delay:0s!important}
+}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bohnenglueck-berlin.blog/#website", "url": "https://bohnenglueck-berlin.blog/", "name": "Bohnenglück", "inLanguage": "de-DE", "publisher": {"@id": "https://bohnenglueck-berlin.blog/#author"}}, {"@type": "Person", "@id": "https://bohnenglueck-berlin.blog/#author", "name": "Lukas Weber", "url": "https://bohnenglueck-berlin.blog/#/ueber-mich", "description": "Barista-Amateur aus Berlin, brüht seit 2019 mit V60 und AeroPress und testet Berliner Röstereien.", "knowsAbout": ["Specialty Coffee", "Pour Over", "V60", "AeroPress", "Home Brewing"], "address": {"@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE"}}, {"@type": "Blog", "@id": "https://bohnenglueck-berlin.blog/#blog", "url": "https://bohnenglueck-berlin.blog/", "name": "Bohnenglück", "description": "Brührezepte mit exakten Mengen für V60, AeroPress, Espresso, Cold Brew, French Press und Chemex.", "inLanguage": "de-DE", "author": {"@id": "https://bohnenglueck-berlin.blog/#author"}, "blogPost": [{"@type": "BlogPosting", "headline": "V60: Die klare Tasse", "description": "Der Handfilter, mit dem die meisten in die Specialty-Welt einsteigen. Mit 15 g Kaffee, ruhigem Aufguss und drei Minuten Zeit holst du Frucht und Klarheit aus hellen Röstungen.", "image": "https://images.unsplash.com/photo-1657040111323-0aa59a7af59d?auto=format&fit=crop&w=1200&h=750&q=70", "url": "https://bohnenglueck-berlin.blog/#/rezepte/v60", "articleSection": "Filterkaffee", "inLanguage": "de-DE", "author": {"@id": "https://bohnenglueck-berlin.blog/#author"}}, {"@type": "BlogPosting", "headline": "AeroPress: Kaffee in zwei Minuten", "description": "Robust, schnell und kaum kaputt zu kriegen: Die AeroPress verzeiht Fehler wie kein anderes Gerät. Ideal für den Einstieg, fürs Büro und für unterwegs.", "image": "https://images.unsplash.com/photo-1651051323638-78180db005ff?auto=format&fit=crop&w=1200&h=750&q=70", "url": "https://bohnenglueck-berlin.blog/#/rezepte/aeropress", "articleSection": "Filterkaffee", "inLanguage": "de-DE", "author": {"@id": "https://bohnenglueck-berlin.blog/#author"}}, {"@type": "BlogPosting", "headline": "Espresso: Der erste gute Shot", "description": "Espresso ist Präzisionsarbeit: 18 g Kaffee, 36 g in der Tasse, 25 bis 30 Sekunden. Hier lernst du, deinen Shot systematisch einzustellen, statt zu raten.", "image": "https://images.unsplash.com/photo-1777558578066-44266564ee65?auto=format&fit=crop&w=1200&h=750&q=70", "url": "https://bohnenglueck-berlin.blog/#/rezepte/espresso", "articleSection": "Espresso", "inLanguage": "de-DE", "author": {"@id": "https://bohnenglueck-berlin.blog/#author"}}, {"@type": "BlogPosting", "headline": "Cold Brew: Zwölf Stunden Geduld", "description": "Kaltes Wasser, grober Mahlgrad, eine Nacht im Kühlschrank: Cold Brew schmeckt weich, schokoladig und kaum bitter – und funktioniert auch im Winter.", "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1200&h=750&q=70", "url": "https://bohnenglueck-berlin.blog/#/rezepte/cold-brew", "articleSection": "Filterkaffee", "inLanguage": "de-DE", "author": {"@id": "https://bohnenglueck-berlin.blog/#author"}}, {"@type": "BlogPosting", "headline": "French Press: Voll und überraschend sauber", "description": "Vier Minuten ziehen, Kruste abschöpfen, fünf Minuten warten: Mit diesem Trick wird French-Press-Kaffee vollmundig und trotzdem fast ohne Bodensatz.", "image": "https://images.unsplash.com/photo-1583577012061-d69d2dbc900a?auto=format&fit=crop&w=1200&h=750&q=70", "url": "https://bohnenglueck-berlin.blog/#/rezepte/french-press", "articleSection": "Filterkaffee", "inLanguage": "de-DE", "author": {"@id": "https://bohnenglueck-berlin.blog/#author"}}, {"@type": "BlogPosting", "headline": "Chemex: Für zwei und für Sonntage", "description": "Dicke Filter, große Karaffe, sehr klare Tasse: Die Chemex ist der Handfilter für mehrere Tassen – ideal, wenn Besuch da ist oder der Morgen länger dauern darf.", "image": "https://images.unsplash.com/photo-1522737799611-b1119d527dc4?auto=format&fit=crop&w=1200&h=750&q=70", "url": "https://bohnenglueck-berlin.blog/#/rezepte/chemex", "articleSection": "Filterkaffee", "inLanguage": "de-DE", "author": {"@id": "https://bohnenglueck-berlin.blog/#author"}}]}]}</script>
+</head>
+<body>
+<svg width="0" height="0" class="visually-hidden" aria-hidden="true" focusable="false">
+  <symbol id="i-logo" viewBox="0 0 32 32">
+    <rect x="3" y="5" width="26" height="3" rx="1.5" fill="currentColor"/>
+    <path d="M5.5 9.5h21l-7.1 10.8a2 2 0 0 1-1.7.9h-3.4a2 2 0 0 1-1.7-.9z" fill="currentColor"/>
+    <path d="M11.6 12l3.4 5.6M20.4 12L17 17.6M16 12v5.6" fill="none" stroke-width="1.2" stroke-linecap="round" style="stroke:var(--ridge,#F4ECDF)"/>
+    <rect x="11" y="22.4" width="10" height="1.8" rx=".9" fill="currentColor"/>
+    <path d="M16 25.4c1.3 1.6 2 2.7 2 3.4a2 2 0 0 1-4 0c0-.7.7-1.8 2-3.4z" fill="#8A9C84"/>
+  </symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7.5a2 2 0 0 0 2 2h2.5"/></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 9h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6V9z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3.5c-.6.9-.6 1.6 0 2.5M12 3.5c-.6.9-.6 1.6 0 2.5"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap header__bar">
+    <a class="brand" href="#/">
+      <svg class="brand__mark" aria-hidden="true" focusable="false"><use href="#i-logo"/></svg>
+      <span class="brand__text"><span class="brand__name">Bohnenglück</span><span class="brand__sub">Journal aus Berlin</span></span><span class="visually-hidden">, zur Startseite</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen">
+      <svg class="icon icon--menu" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+      <svg class="icon icon--close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Hauptnavigation">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#/" data-nav="start" aria-current="page">Startseite</a></li>
+        <li class="nav__item"><a class="nav__link" href="#/rezepte" data-nav="rezepte">Rezepte &amp; Guides</a></li>
+        <li class="nav__item"><a class="nav__link" href="#/ueber-mich" data-nav="ueber">Über mich</a></li>
+        <li class="nav__item"><a class="nav__link" href="#/kontakt" data-nav="kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- ===================== STARTSEITE ===================== -->
+  <section class="view is-active" id="view-start" data-view="start" aria-labelledby="start-title">
+    <div class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <h1 class="hero__title view-title" id="start-title" tabindex="-1">Guter Kaffee ist eine Frage von Gramm, Grad und Geduld.</h1>
+          <p class="lead hero__lead">Ich bin Lukas, Barista-Amateur aus Berlin, und brühe seit 2019 mit Waage und Timer – am liebsten mit V60 und AeroPress. Hier findest du Rezepte für sechs Brühmethoden, mit exakten Mengen, verständlich erklärt und gemacht zum Nachbrühen.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#/rezepte">Alle Guides ansehen</a>
+            <a class="btn btn--ghost" href="#/ueber-mich">Wer hier schreibt</a>
+          </div>
+        </div>
+        <figure class="hero__media">
+          <picture>
+            <source media="(min-width: 900px)" srcset="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=480&amp;h=600&amp;q=70 480w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=720&amp;h=900&amp;q=70 720w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=960&amp;h=1200&amp;q=70 960w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=1200&amp;h=1500&amp;q=70 1200w" sizes="(min-width: 1280px) 460px, 36vw" width="720" height="900">
+            <img class="hero__img" src="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=800&amp;h=533&amp;q=70" srcset="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=480&amp;h=320&amp;q=70 480w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=800&amp;h=533&amp;q=70 800w, https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&amp;fit=crop&amp;w=1200&amp;h=800&amp;q=70 1200w" sizes="(min-width: 640px) calc(100vw - 96px), calc(100vw - 40px)" width="800" height="533" alt="Wasser fließt aus einem Schwanenhalskessel in einen dunklen Handfilter über einer Glaskanne" fetchpriority="high" decoding="async">
+          </picture>
+          <figcaption class="recipe-card">
+            <p class="recipe-card__title">Das Grundrezept</p>
+            <p class="recipe-card__sub">Hario V60, eine große Tasse</p>
+            <dl class="recipe-card__list">
+              <div><dt>Gramm</dt><dd>15&nbsp;g auf 250&nbsp;g</dd></div>
+              <div><dt>Grad</dt><dd>94&nbsp;°C</dd></div>
+              <div><dt>Geduld</dt><dd>3&nbsp;Minuten</dd></div>
+            </dl>
+            <a class="text-link recipe-card__link" href="#/rezepte/v60">V60-Rezept öffnen</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <section class="grind" aria-labelledby="grind-title">
+      <div class="wrap">
+        <div class="grind__head">
+          <h2 id="grind-title">Vom Puder bis zum Grobkorn</h2>
+          <p>Jede Methode braucht ihren eigenen Mahlgrad – ist er falsch, hilft auch die beste Bohne nicht. Wähle eine Methode, um das passende Rezept zu öffnen.</p>
+        </div>
+        <ol class="grind__scale" id="grind-scale"></ol>
+        <p class="grind__axis" aria-hidden="true"><span>feiner</span><span>gröber</span></p>
+      </div>
+    </section>
+
+    <section class="section featured" aria-labelledby="featured-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="featured-title">Drei Methoden für den Einstieg</h2>
+          <p>Günstig, robust und schnell gelernt – mit diesen drei Geräten wird schon dein nächster Kaffee besser.</p>
+        </div>
+        <div class="featured__grid" id="featured-grid"></div>
+        <p class="noscript-note js-fallback">Die Rezepte werden mit JavaScript angezeigt. Bitte aktiviere JavaScript in deinem Browser.</p>
+        <p class="featured__more"><a class="btn btn--ghost" href="#/rezepte">Alle sechs Guides ansehen</a></p>
+      </div>
+    </section>
+
+    <section class="section comments" aria-labelledby="comments-title">
+      <div class="wrap comments__grid">
+        <div class="comments__intro">
+          <h2 id="comments-title">Kommentare und Fragen</h2>
+          <p>Du hast ein Rezept ausprobiert oder hängst beim Mahlgrad fest? Schreib es mir. Ich lese jeden Kommentar und schalte ihn nach einer kurzen Prüfung hier frei.</p>
+          <ul class="comment-list" id="comment-list" hidden></ul>
+          <div class="empty" id="comment-empty">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-cup"/></svg>
+            <p class="empty__title">Noch keine freigeschalteten Kommentare.</p>
+            <p class="empty__text">Hast du einen Guide ausprobiert? Erzähl, wie dein Kaffee geworden ist – der erste Kommentar gehört dir.</p>
+          </div>
+        </div>
+        <div class="panel" data-form-wrap>
+          <h3 class="panel__title">Kommentar schreiben</h3>
+          <form class="form" id="comment-form" data-form="comment" novalidate>
+            <div class="field">
+              <label class="field__label" for="comment-name">Dein Name</label>
+              <input class="field__input" id="comment-name" name="name" type="text" autocomplete="name" maxlength="60" required aria-describedby="comment-name-hint comment-name-error">
+              <span class="field__hint" id="comment-name-hint">Erscheint öffentlich über deinem Kommentar. Ein Vorname reicht.</span>
+              <span class="field__error" id="comment-name-error"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="comment-guide">Zu welchem Guide?</label>
+              <select class="field__input" id="comment-guide" name="guide" data-guides>
+                <option value="">Allgemein</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="field__label" for="comment-message">Dein Kommentar</label>
+              <textarea class="field__input" id="comment-message" name="message" rows="5" maxlength="1500" required aria-describedby="comment-message-error"></textarea>
+              <span class="field__error" id="comment-message-error"></span>
+            </div>
+            <div class="hp" aria-hidden="true"><label for="comment-website">Website</label><input id="comment-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+            <p class="form__status" role="alert" hidden></p>
+            <div class="form__actions"><button class="btn btn--primary" type="submit">Kommentar senden</button></div>
+            <p class="form__note">Kommentare erscheinen erst nach meiner Prüfung. Es gelten die <a href="#/nutzungsbedingungen">Nutzungsbedingungen</a> und die <a href="#/datenschutz">Datenschutzerklärung</a>.</p>
+          </form>
+          <div class="form-success" role="status" hidden>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>
+            <h3 class="form-success__title" tabindex="-1">Danke!</h3>
+            <p class="form-success__text"></p>
+            <button class="btn btn--ghost" type="button" data-again>Weiteren Kommentar schreiben</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq-title">
+      <div class="wrap faq__grid">
+        <div class="faq__intro">
+          <h2 id="faq-title">Fragen zum Equipment</h2>
+          <p>Mühle, Waage, Wasser: was du wirklich brauchst – und was du dir sparen kannst.</p>
+          <p><a class="text-link" href="#/kontakt">Deine Frage fehlt? Schreib mir.</a></p>
+        </div>
+        <div class="accordion">
+          <div class="acc">
+            <h3 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn"><span>Welche Kaffeemühle brauche ich für den Anfang?</span><svg class="icon acc__chev" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-1"><div class="acc__inner">
+              <p>Eine Mühle mit Kegel- oder Scheibenmahlwerk. Schlagmahlwerke zerhacken die Bohnen ungleichmäßig: Feiner Staub und grobe Brocken extrahieren unterschiedlich schnell, der Kaffee schmeckt dann gleichzeitig bitter und sauer.</p>
+              <p>Für Filterkaffee reicht eine gute Handmühle. Für Espresso brauchst du eine Mühle, die sich sehr fein und in kleinen Schritten einstellen lässt.</p>
+            </div></div>
+          </div>
+          <div class="acc">
+            <h3 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn"><span>Brauche ich wirklich eine Waage?</span><svg class="icon acc__chev" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-2"><div class="acc__inner">
+              <p>Ja – sie ist das günstigste Upgrade mit der größten Wirkung. Ein Messlöffel misst Volumen, und je nach Röstung und Bohnengröße steckt darin unterschiedlich viel Kaffee. Eine Küchenwaage mit 0,1-g-Schritten und eingebautem Timer macht jedes Rezept wiederholbar.</p>
+            </div></div>
+          </div>
+          <div class="acc">
+            <h3 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn"><span>Welcher Wasserkocher eignet sich für Pour Over?</span><svg class="icon acc__chev" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-3"><div class="acc__inner">
+              <p>Ideal ist ein Kessel mit Schwanenhals: Der dünne Ausguss gibt dir Kontrolle über Menge und Tempo des Aufgusses. Eine Temperaturregelung ist praktisch, aber kein Muss – lass sprudelnd kochendes Wasser einfach etwa 30&nbsp;Sekunden stehen, bevor du gießt.</p>
+            </div></div>
+          </div>
+          <div class="acc">
+            <h3 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn"><span>Welches Wasser ist das richtige für Kaffee?</span><svg class="icon acc__chev" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-4"><div class="acc__inner">
+              <p>Filterkaffee besteht zu rund 98&nbsp;Prozent aus Wasser, entsprechend groß ist sein Einfluss. Berliner Leitungswasser gilt als hart – über 14&nbsp;°dH, je nach Bezirk unterschiedlich. Viel Kalk dämpft Säure und Süße und setzt sich in Kesseln und Maschinen ab.</p>
+              <p>Ein Tischwasserfilter oder ein weiches, stilles Mineralwasser bringt oft spürbar mehr Klarheit in die Tasse. Den Härtegrad für deine Postleitzahl findest du bei den <a class="text-link" href="https://www.bwb.de/" rel="noopener noreferrer" target="_blank">Berliner Wasserbetrieben</a>.</p>
+            </div></div>
+          </div>
+          <div class="acc">
+            <h3 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn"><span>Papierfilter oder Metallfilter?</span><svg class="icon acc__chev" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-5"><div class="acc__inner">
+              <p>Papier hält Kaffeeöle und feinste Partikel zurück – die Tasse wird klar und leicht. Metallfilter lassen beides durch: Der Kaffee wird vollmundiger, aber auch trüber. Papierfilter spülst du vor dem Brühen immer mit heißem Wasser, das nimmt den Papiergeschmack und wärmt das Gefäß vor.</p>
+            </div></div>
+          </div>
+          <div class="acc">
+            <h3 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-6-btn"><span>Wie lagere ich Kaffeebohnen richtig?</span><svg class="icon acc__chev" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-6"><div class="acc__inner">
+              <p>Luftdicht, dunkel und kühl – aber nicht im Kühlschrank, dort ziehen die Bohnen Feuchtigkeit und Gerüche an. Kauf lieber kleinere Mengen und mahle erst direkt vor dem Brühen.</p>
+              <p>Achte beim Kauf auf das Röstdatum: Frisch gerösteter Kaffee braucht ein paar Tage Ruhe und schmeckt danach meist einige Wochen lang am besten.</p>
+            </div></div>
+          </div>
+          <div class="acc">
+            <h3 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-7" id="faq-7-btn"><span>Lohnt sich eine Siebträgermaschine für Einsteiger?</span><svg class="icon acc__chev" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-7"><div class="acc__inner">
+              <p>Nur, wenn du wirklich Espresso trinken möchtest und Lust hast zu üben. Plane die Mühle mit ein: Für Espresso ist sie mindestens so wichtig wie die Maschine. Wer einfach kräftigen Kaffee möchte, kommt mit AeroPress oder French Press günstiger und schneller ans Ziel.</p>
+            </div></div>
+          </div>
+          <div class="acc">
+            <h3 class="acc__h"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-8" id="faq-8-btn"><span>Wie oft sollte ich entkalken und reinigen?</span><svg class="icon acc__chev" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></h3>
+            <div class="acc__panel" id="faq-8"><div class="acc__inner">
+              <p>Bei hartem Berliner Wasser lieber zu oft als zu selten. Wasserkocher und Maschine entkalkst du nach Herstellerangabe; sichtbare Kalkränder sind das Signal, nicht länger zu warten. Brühgeräte nach jedem Gebrauch mit warmem Wasser ausspülen und die Mühle regelmäßig ausbürsten – alte Kaffeeöle werden ranzig, und das schmeckt man.</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===================== REZEPTE & GUIDES ===================== -->
+  <section class="view" id="view-rezepte" data-view="rezepte" aria-labelledby="rezepte-title">
+    <div class="wrap">
+      <header class="page-head">
+        <h1 class="view-title" id="rezepte-title" tabindex="-1">Rezepte &amp; Guides</h1>
+        <p class="lead">Sechs Methoden, sechs Rezepte – jedes mit Mengen, Temperatur und Zeit und einer Anleitung, was du tun kannst, wenn es nicht schmeckt.</p>
+        <div class="filters" role="group" aria-label="Guides nach Kategorie filtern">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">Alle <span class="filter__count">6</span></button>
+          <button class="filter" type="button" data-filter="filter" aria-pressed="false">Filterkaffee <span class="filter__count">5</span></button>
+          <button class="filter" type="button" data-filter="espresso" aria-pressed="false">Espresso <span class="filter__count">1</span></button>
+        </div>
+        <p class="visually-hidden" id="filter-status" aria-live="polite"></p>
+      </header>
+      <div class="guides-grid" id="guides-grid"></div>
+      <p class="noscript-note js-fallback">Die Rezepte werden mit JavaScript angezeigt. Bitte aktiviere JavaScript in deinem Browser.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ÜBER MICH ===================== -->
+  <section class="view" id="view-ueber" data-view="ueber" aria-labelledby="ueber-title">
+    <div class="wrap about-hero">
+      <div>
+        <h1 class="view-title" id="ueber-title" tabindex="-1">Hallo, ich bin Lukas.</h1>
+        <p class="lead">Ich bin Lukas Weber, Barista aus Leidenschaft, nicht von Beruf. Seit 2019 brühe ich in Berlin Kaffee von Hand, am liebsten mit V60 und AeroPress, und probiere mich durch die Röstereien meiner Stadt.</p>
+      </div>
+      <figure>
+        <img class="about-hero__img" src="https://images.unsplash.com/photo-1598639298075-9f62f1fc5463?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=70" srcset="https://images.unsplash.com/photo-1598639298075-9f62f1fc5463?auto=format&amp;fit=crop&amp;w=480&amp;h=360&amp;q=70 480w, https://images.unsplash.com/photo-1598639298075-9f62f1fc5463?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=70 800w, https://images.unsplash.com/photo-1598639298075-9f62f1fc5463?auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=70 1200w" sizes="(min-width: 1280px) 560px, (min-width: 900px) 46vw, calc(100vw - 40px)" width="800" height="600" alt="Verschiedene Brühgeräte auf einem Holztisch: French Press, Siphon, Chemex und Glaskaraffen" loading="lazy" decoding="async">
+      </figure>
+    </div>
+
+    <div class="wrap story">
+      <article class="prose">
+        <h2>Seit 2019 am Handfilter</h2>
+        <p>2019 habe ich mit dem alternativen Brühen angefangen – mit dem V60 und der AeroPress, die bis heute meine Lieblingsmethoden sind. Seitdem gehören Waage und Timer genauso zu meinem Kaffee wie die Bohne selbst.</p>
+        <p>Als Barista-Amateur habe ich keine Café-Theke, sondern eine Küche, eine Mühle und viel Neugier. Genau deshalb sind die Rezepte hier alltagstauglich: Sie funktionieren mit Equipment, das man zu Hause wirklich hat.</p>
+        <p>Besonders gern teste ich Bohnen von Berliner Röstereien. Ich vergleiche Herkünfte und Röstgrade, probiere sie im V60 und in der AeroPress und notiere, wie sie sich verhalten. Was sich bewährt, landet als Rezept in diesem Journal.</p>
+        <h2>Warum es dieses Journal gibt</h2>
+        <p>Guter Kaffee scheitert zu Hause selten an der Bohne, sondern an Kleinigkeiten: am Mahlgrad, am Wasser, an Rezepten ohne Zahlen. Genau diese Kleinigkeiten erkläre ich hier – Schritt für Schritt und so, dass du sie nachbrühen kannst.</p>
+        <p>Jedes Rezept nennt Gramm, Grad und Zeit. Dazu kommt, was du tun kannst, wenn die Tasse sauer, bitter oder flach schmeckt. Denn ein Rezept ist erst dann wirklich gut, wenn du es auch korrigieren kannst.</p>
+        <blockquote class="pull"><p>„Ein gutes Rezept ist kein Gesetz, sondern ein Startpunkt.“</p></blockquote>
+        <h2>Berlin, Kiez für Kiez</h2>
+        <p>Berlin ist eine Stadt der Kieze, und in vielen davon gibt es inzwischen ein Café, in dem jemand mit Hingabe Bohnen abwiegt. Zwischen Spätikaffee und Single Origin liegen hier oft nur ein paar Hausnummern.</p>
+        <p>Genau das mag ich an dieser Stadt: Guter Kaffee ist kein Statussymbol, sondern Alltag. Diese Haltung möchte ich in deine Küche bringen – ohne Fachchinesisch und ohne Wettrüsten beim Equipment.</p>
+      </article>
+      <figure class="story__figure">
+        <img src="https://images.unsplash.com/photo-1685439001399-882607f3703a?auto=format&amp;fit=crop&amp;w=640&amp;h=800&amp;q=70" srcset="https://images.unsplash.com/photo-1685439001399-882607f3703a?auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=70 400w, https://images.unsplash.com/photo-1685439001399-882607f3703a?auto=format&amp;fit=crop&amp;w=640&amp;h=800&amp;q=70 640w, https://images.unsplash.com/photo-1685439001399-882607f3703a?auto=format&amp;fit=crop&amp;w=960&amp;h=1200&amp;q=70 960w" sizes="(min-width: 1280px) 380px, (min-width: 900px) 30vw, calc(100vw - 40px)" width="640" height="800" alt="Cappuccino in einer orangefarbenen Tasse und ein Stück Kuchen auf einem Holztisch am Fenster eines Berliner Cafés" loading="lazy" decoding="async">
+        <figcaption>Nachmittagskaffee in einem Berliner Café.</figcaption>
+      </figure>
+    </div>
+
+    <section class="section principles" aria-labelledby="principles-title">
+      <div class="wrap">
+        <h2 id="principles-title">Meine Brühphilosophie</h2>
+        <ul class="principles__list">
+          <li class="principle"><h3>Messen statt raten</h3><p>Gramm und Sekunden machen Geschmack wiederholbar. Das Gefühl für Kaffee kommt trotzdem – mit Zahlen nur schneller.</p></li>
+          <li class="principle"><h3>Die Bohne zuerst</h3><p>Frische, gut geröstete Bohnen verändern mehr als jedes neue Gerät. Teures Equipment rettet keinen alten Kaffee.</p></li>
+          <li class="principle"><h3>Wasser ist keine Nebensache</h3><p>Filterkaffee besteht zu rund 98&nbsp;Prozent aus Wasser. Wer mit hartem Berliner Leitungswasser brüht, schmeckt den Unterschied, sobald er filtert.</p></li>
+          <li class="principle"><h3>Neugier vor Dogma</h3><p>Es gibt nicht das eine richtige Rezept. Meine Angaben sind Startpunkte – dein Geschmack hat das letzte Wort.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="about-cta-title">
+      <div class="wrap cta-band__inner">
+        <h2 id="about-cta-title">Lust, es selbst auszuprobieren?</h2>
+        <p>Fang mit dem V60 oder der AeroPress an. Und wenn etwas nicht klappt: Schreib mir.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="#/rezepte">Zu den Guides</a>
+          <a class="btn btn--ghost" href="#/kontakt">Schreib mir</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===================== KONTAKT ===================== -->
+  <section class="view" id="view-kontakt" data-view="kontakt" aria-labelledby="kontakt-title">
+    <div class="wrap contact">
+      <div class="contact__intro">
+        <h1 class="view-title" id="kontakt-title" tabindex="-1">Schreib mir.</h1>
+        <p class="lead">Du hast eine Frage zu einem Rezept, suchst Rat beim Equipment oder kennst eine Rösterei, die ich unbedingt probieren sollte? Ich freue mich über jede Nachricht und antworte, so schnell ich kann.</p>
+        <dl class="contact__details">
+          <div>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>
+            <dt>E-Mail</dt>
+            <dd><a data-site="email-link" href="mailto:hallo@bohnenglueck-berlin.blog">hallo@bohnenglueck-berlin.blog</a>
+              <button class="copy-btn" type="button" data-copy-email><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg><span class="copy-btn__label">Kopieren</span></button>
+              <span class="visually-hidden" id="copy-status" aria-live="polite"></span>
+            </dd>
+          </div>
+          <div>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>
+            <dt>Standort</dt>
+            <dd><span><span data-site="city">Berlin</span>, <span data-site="country">Deutschland</span></span></dd>
+          </div>
+        </dl>
+        <figure class="contact__media">
+          <img src="https://images.unsplash.com/photo-1597341510440-5b82f96e6dcf?auto=format&amp;fit=crop&amp;w=720&amp;h=480&amp;q=70" srcset="https://images.unsplash.com/photo-1597341510440-5b82f96e6dcf?auto=format&amp;fit=crop&amp;w=480&amp;h=320&amp;q=70 480w, https://images.unsplash.com/photo-1597341510440-5b82f96e6dcf?auto=format&amp;fit=crop&amp;w=720&amp;h=480&amp;q=70 720w, https://images.unsplash.com/photo-1597341510440-5b82f96e6dcf?auto=format&amp;fit=crop&amp;w=1080&amp;h=720&amp;q=70 1080w" sizes="(min-width: 1280px) 480px, (min-width: 900px) 40vw, calc(100vw - 40px)" width="720" height="480" alt="" loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <div class="contact__form panel" data-form-wrap>
+        <h2 class="panel__title">Nachricht schreiben</h2>
+        <form class="form" id="contact-form" data-form="contact" novalidate>
+          <div class="field">
+            <label class="field__label" for="contact-name">Name</label>
+            <input class="field__input" id="contact-name" name="name" type="text" autocomplete="name" maxlength="60" required aria-describedby="contact-name-error">
+            <span class="field__error" id="contact-name-error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="contact-email">E-Mail</label>
+            <input class="field__input" id="contact-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="120" required aria-describedby="contact-email-hint contact-email-error">
+            <span class="field__hint" id="contact-email-hint">Nur für meine Antwort. Wird nicht veröffentlicht.</span>
+            <span class="field__error" id="contact-email-error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="contact-message">Nachricht</label>
+            <textarea class="field__input" id="contact-message" name="message" rows="6" maxlength="1500" required aria-describedby="contact-message-error"></textarea>
+            <span class="field__error" id="contact-message-error"></span>
+          </div>
+          <div class="hp" aria-hidden="true"><label for="contact-website">Website</label><input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <p class="form__status" role="alert" hidden></p>
+          <div class="form__actions"><button class="btn btn--primary" type="submit">Nachricht senden</button></div>
+          <p class="form__note">Deine Angaben nutze ich nur, um dir zu antworten. Details in der <a href="#/datenschutz">Datenschutzerklärung</a>.</p>
+        </form>
+        <div class="form-success" role="status" hidden>
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>
+          <h3 class="form-success__title" tabindex="-1">Danke!</h3>
+          <p class="form-success__text"></p>
+          <button class="btn btn--ghost" type="button" data-again>Neue Nachricht schreiben</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="brand" href="#/">
+        <svg class="brand__mark" aria-hidden="true" focusable="false" style="--ridge:#2A1B12"><use href="#i-logo"/></svg>
+        <span class="brand__text"><span class="brand__name">Bohnenglück</span><span class="brand__sub">Journal aus Berlin</span></span><span class="visually-hidden">, zur Startseite</span>
+      </a>
+      <p>Specialty Coffee und Home Brewing aus Berlin. Rezepte mit Zahlen, die funktionieren.</p>
+    </div>
+    <nav aria-labelledby="footer-nav-h">
+      <h2 class="footer__h" id="footer-nav-h">Journal</h2>
+      <ul class="footer__list">
+        <li><a href="#/">Startseite</a></li>
+        <li><a href="#/rezepte">Rezepte &amp; Guides</a></li>
+        <li><a href="#/ueber-mich">Über mich</a></li>
+        <li><a href="#/kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="footer__h">Rechtliches</h2>
+      <ul class="footer__list">
+        <li><a href="#/impressum">Impressum</a></li>
+        <li><a href="#/datenschutz">Datenschutzerklärung</a></li>
+        <li><a href="#/nutzungsbedingungen">Nutzungsbedingungen</a></li>
+        <li><button class="footer__btn" type="button" data-consent-open>Cookie-Einstellungen</button></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer__h">Kontakt</h2>
+      <ul class="footer__list">
+        <li><a data-site="email-link" href="mailto:hallo@bohnenglueck-berlin.blog">hallo@bohnenglueck-berlin.blog</a></li>
+        <li><span data-site="city">Berlin</span>, <span data-site="country">Deutschland</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <p>© <span data-year>2026</span> Bohnenglück, <span data-site="author">Lukas Weber</span></p>
+    <p>Fotos: <a href="https://unsplash.com/" rel="noopener noreferrer" target="_blank">Unsplash</a></p>
+  </div>
+</footer>
+
+<dialog class="modal" id="modal" aria-labelledby="modal-title">
+  <div class="modal__panel">
+    <button class="modal__close" type="button" data-close aria-label="Schließen"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
+    <div id="modal-content"></div>
+  </div>
+</dialog>
+
+<div class="consent" id="consent" role="region" aria-label="Datenschutz-Hinweis" hidden>
+  <p class="consent__text">Ich setze keine Tracking-Cookies. Mit „Akzeptieren“ lädt diese Seite die Schriften von Google Fonts – dabei wird deine IP-Adresse an Google übertragen. Mehr in der <a href="#/datenschutz">Datenschutzerklärung</a>.</p>
+  <div class="consent__actions">
+    <button class="btn btn--small btn--quiet" type="button" data-consent="decline">Ablehnen</button>
+    <button class="btn btn--small btn--primary" type="button" data-consent="accept">Akzeptieren</button>
+  </div>
+</div>
+
+<!-- ===================== RECHTSTEXTE ===================== -->
+<template id="legal-datenschutz">
+  <h2 id="modal-title" tabindex="-1">Datenschutzerklärung</h2>
+  <p class="legal__stand">Stand: <span data-site="updated">November 2026</span></p>
+
+  <h3>1. Verantwortlicher</h3>
+  <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+  <address data-site="address">Lukas Weber<br>Berlin<br>Deutschland</address>
+  <p>E-Mail: <a data-site="email-link" href="mailto:hallo@bohnenglueck-berlin.blog">hallo@bohnenglueck-berlin.blog</a></p>
+
+  <h3>2. Das Wichtigste in Kürze</h3>
+  <p><span data-site="name">Bohnenglück</span> ist ein privates Blog ohne Nutzerkonten, ohne Werbung und ohne Analyse- oder Tracking-Werkzeuge. Verarbeitet werden nur Daten, die für die Auslieferung der Seite technisch nötig sind, die du ausdrücklich erlaubst oder die du mir selbst schickst.</p>
+
+  <h3>3. Hosting, Aufruf der Website und Server-Logfiles</h3>
+  <p>Diese Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Wenn du die Seite aufrufst, verarbeitet GitHub automatisch Daten, die dein Browser übermittelt, insbesondere deine IP-Adresse sowie Datum und Uhrzeit des Zugriffs. Nach Angaben von GitHub wird die IP-Adresse von Besucherinnen und Besuchern einer GitHub-Pages-Seite aus Sicherheitsgründen protokolliert und gespeichert. Das ist nötig, um die Seite auszuliefern und ihre Sicherheit zu gewährleisten.</p>
+  <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt im sicheren und stabilen Betrieb der Website. GitHub ist nach dem EU-US Data Privacy Framework zertifiziert; eine Verarbeitung in den USA ist daher möglich. Auf Umfang und Dauer dieser Protokollierung habe ich keinen Einfluss; Einzelheiten findest du in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer" target="_blank">Datenschutzerklärung von GitHub</a>. Die Verbindung ist per HTTPS verschlüsselt.</p>
+
+  <h3>4. Speicherung in deinem Browser</h3>
+  <p>Diese Website setzt keine Cookies. Sie speichert lediglich deine Entscheidung im Datenschutz-Hinweis („Akzeptieren“ oder „Ablehnen“) samt Zeitpunkt im lokalen Speicher deines Browsers (Local Storage), damit der Hinweis nicht bei jedem Besuch erneut erscheint. Diese Speicherung ist unbedingt erforderlich (§&nbsp;25 Abs.&nbsp;2 Nr.&nbsp;2 TDDDG). Du kannst sie jederzeit über die Einstellungen deines Browsers löschen.</p>
+
+  <h3>5. Schriften von Google Fonts (nur mit Einwilligung)</h3>
+  <p>Für die Schriften „Playfair Display“ und „Inter“ kann diese Seite Google Fonts nutzen, einen Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Die Schriften werden erst geladen, nachdem du im Hinweis auf „Akzeptieren“ geklickt hast. Dabei baut dein Browser eine Verbindung zu Servern von Google auf und übermittelt deine IP-Adresse. Eine Übermittlung in die USA ist möglich; Google LLC ist nach dem EU-US Data Privacy Framework zertifiziert.</p>
+  <p>Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, §&nbsp;25 Abs.&nbsp;1 TDDDG). Du kannst sie jederzeit mit Wirkung für die Zukunft über „Cookie-Einstellungen“ im Fußbereich der Seite widerrufen. Ohne Einwilligung zeigt die Seite die Systemschriften deines Geräts. Mehr dazu in der <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Datenschutzerklärung von Google</a>.</p>
+
+  <h3>6. Fotos von Unsplash</h3>
+  <p>Die Fotos auf dieser Seite stammen von Unsplash und werden direkt von dessen Servern (images.unsplash.com) geladen. Dabei werden deine IP-Adresse und technische Browserdaten an die Unsplash Inc., 400 rue McGill, Suite 500, Montréal (QC) H2Y 2G1, Kanada, übermittelt. Für Kanada besteht ein Angemessenheitsbeschluss der EU-Kommission. Für die Auslieferung können Content-Delivery-Netzwerke eingesetzt werden, deren Server auch außerhalb der EU stehen.</p>
+  <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt in einer ansprechenden und schnell ladenden Darstellung. Mehr dazu in der <a href="https://unsplash.com/privacy" rel="noopener noreferrer" target="_blank">Datenschutzerklärung von Unsplash</a>.</p>
+
+  <h3>7. Kontaktformular, Kommentare und E-Mail</h3>
+  <p>Wenn du mir über das Kontaktformular, das Kommentarformular oder per E-Mail schreibst, verarbeite ich deine Angaben – Name, gegebenenfalls E-Mail-Adresse und deine Nachricht oder deinen Kommentar –, um deine Anfrage zu beantworten beziehungsweise deinen Kommentar zu prüfen und zu veröffentlichen.</p>
+  <p data-if-not="formEndpoint">Beide Formulare öffnen dein eigenes E-Mail-Programm mit einer vorausgefüllten Nachricht an mich. Dabei werden keine Daten an diese Website übertragen; versendet wird die Nachricht erst, wenn du sie in deinem E-Mail-Programm abschickst. E-Mails an <a data-site="email-link" href="mailto:hallo@bohnenglueck-berlin.blog">hallo@bohnenglueck-berlin.blog</a> leitet der E-Mail-Weiterleitungsdienst meines Domain-Registrars NameSilo, LLC, 390 NE 191st St STE 8437, Miami, FL 33179, USA, an mein E-Mail-Postfach bei Google (Gmail) weiter; dabei können Daten in den USA verarbeitet werden.</p>
+  <p data-if="formEndpoint">Die Formulare übermitteln deine Angaben verschlüsselt über <span data-site="formProcessor">einen Formular-Dienstleister</span> an mich; sie werden als E-Mail an mein Postfach zugestellt und nicht auf der Website gespeichert.</p>
+  <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt darin, deine Anfrage zu beantworten und mich mit Leserinnen und Lesern auszutauschen. Bei Kommentaren werden nur der von dir angegebene Name und dein Kommentartext veröffentlicht. Ich lösche deine Angaben, sobald sie nicht mehr benötigt werden; veröffentlichte Kommentare entferne ich auf Wunsch jederzeit.</p>
+
+  <h3>8. Deine Rechte</h3>
+  <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18) und Datenübertragbarkeit (Art. 20). Verarbeitungen auf Grundlage berechtigter Interessen kannst du widersprechen (Art. 21). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3). Eine formlose Nachricht an <a data-site="email-link" href="mailto:hallo@bohnenglueck-berlin.blog">hallo@bohnenglueck-berlin.blog</a> genügt.</p>
+  <p>Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO), zum Beispiel bei der für Berlin zuständigen:</p>
+  <address>Berliner Beauftragte für Datenschutz und Informationsfreiheit<br>Alt-Moabit 59–61, 10555 Berlin<br><a href="mailto:mailbox@datenschutz-berlin.de">mailbox@datenschutz-berlin.de</a></address>
+
+  <h3>9. Keine automatisierten Entscheidungen</h3>
+  <p>Es findet keine automatisierte Entscheidungsfindung einschließlich Profiling statt.</p>
+
+  <h3>10. Änderungen</h3>
+  <p>Ich passe diese Datenschutzerklärung an, sobald sich die Website oder die Rechtslage ändert. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+</template>
+
+<template id="legal-nutzungsbedingungen">
+  <h2 id="modal-title" tabindex="-1">Nutzungsbedingungen</h2>
+  <p class="legal__stand">Stand: <span data-site="updated">November 2026</span></p>
+
+  <h3>1. Geltungsbereich</h3>
+  <p>Diese Bedingungen gelten für die Nutzung von <span data-site="name">Bohnenglück</span>, einem privaten Blog von <span data-site="author">Lukas Weber</span> aus Berlin. Die Nutzung ist kostenlos und ohne Registrierung möglich.</p>
+
+  <h3>2. Rezepte und Inhalte</h3>
+  <p>Alle Rezepte und Tipps entstehen mit Sorgfalt und nach bestem Wissen. Bohnen, Wasser, Mühlen und Geräte unterscheiden sich jedoch – die Angaben sind Empfehlungen und keine Garantie für ein bestimmtes Ergebnis. Für Vollständigkeit, Richtigkeit und Aktualität der Inhalte übernehme ich keine Gewähr.</p>
+
+  <h3>3. Sicherheit beim Brühen</h3>
+  <p>Beim Kaffeekochen arbeitest du mit kochendem Wasser, heißem Dampf und bei Espressomaschinen mit hohem Druck. Beachte immer die Bedienungsanleitung deiner Geräte. Das Nachbrühen der Anleitungen erfolgt in eigener Verantwortung.</p>
+
+  <h3>4. Haftung</h3>
+  <p>Da die Inhalte unentgeltlich bereitgestellt werden, hafte ich nur für Vorsatz und grobe Fahrlässigkeit. Unberührt bleibt die Haftung für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie nach zwingenden gesetzlichen Vorschriften.</p>
+
+  <h3>5. Links zu anderen Websites</h3>
+  <p>Diese Seite enthält Links zu externen Websites. Auf deren Inhalte habe ich keinen Einfluss; verantwortlich ist der jeweilige Anbieter. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Erfahre ich von einer Rechtsverletzung, entferne ich den Link umgehend.</p>
+
+  <h3>6. Urheberrecht</h3>
+  <p>Texte und Rezepte auf dieser Seite sind urheberrechtlich geschützt. Für den privaten Gebrauch darfst du sie gern nutzen, ausdrucken und mit Freundinnen und Freunden teilen. Jede Veröffentlichung, Vervielfältigung oder kommerzielle Nutzung – auch in Auszügen – braucht meine vorherige Zustimmung. Zitate mit Quellenangabe im Rahmen von §&nbsp;51 UrhG bleiben erlaubt.</p>
+  <p>Die Fotos stammen von Unsplash und werden unter der Unsplash-Lizenz genutzt; die Rechte liegen bei den jeweiligen Fotografinnen und Fotografen.</p>
+
+  <h3>7. Kommentare und Zuschriften</h3>
+  <p>Bitte bleib respektvoll und beim Thema. Nicht erlaubt sind Werbung, Beleidigungen, rechtswidrige Inhalte und personenbezogene Daten Dritter. Kommentare werden vor der Veröffentlichung geprüft; ich behalte mir vor, Beiträge nicht freizuschalten, zu kürzen oder zu löschen.</p>
+  <p>Mit dem Einsenden räumst du mir das einfache, unentgeltliche Recht ein, deinen Kommentar auf dieser Website zu veröffentlichen. Du kannst jederzeit verlangen, dass er wieder entfernt wird.</p>
+
+  <h3>8. Änderungen</h3>
+  <p>Ich kann diese Bedingungen anpassen, etwa wenn neue Funktionen hinzukommen. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+
+  <h3>9. Anwendbares Recht</h3>
+  <p>Es gilt das Recht der Bundesrepublik Deutschland. Zwingende Verbraucherschutzvorschriften des Staates, in dem du deinen gewöhnlichen Aufenthalt hast, bleiben unberührt.</p>
+</template>
+
+<template id="legal-impressum">
+  <h2 id="modal-title" tabindex="-1">Impressum</h2>
+  <h3>Angaben gemäß §&nbsp;5 DDG</h3>
+  <address data-site="address">Lukas Weber<br>Berlin<br>Deutschland</address>
+  <h3>Kontakt</h3>
+  <p>E-Mail: <a data-site="email-link" href="mailto:hallo@bohnenglueck-berlin.blog">hallo@bohnenglueck-berlin.blog</a></p>
+  <h3>Verantwortlich für den Inhalt nach §&nbsp;18 Abs.&nbsp;2 MStV</h3>
+  <p><span data-site="author">Lukas Weber</span>, Anschrift wie oben</p>
+</template>
+
+<!--
+  SITE CONFIG (plain JSON, edit freely – no hash to update):
+  - street / postalCode: required for the Impressum (§ 5 DDG, § 18 MStV) before going live.
+  - formEndpoint: https URL that accepts JSON POST (Formspree, Web3Forms or an own server endpoint).
+    Empty = forms open the visitor's mail app (mailto). If you set it, also set formProcessor
+    (shown in the privacy policy).
+-->
+<script type="application/json" id="site-config">{
+  "name": "Bohnenglück",
+  "author": "Lukas Weber",
+  "email": "hallo@bohnenglueck-berlin.blog",
+  "street": "",
+  "postalCode": "",
+  "city": "Berlin",
+  "country": "Deutschland",
+  "formEndpoint": "",
+  "formProcessor": "",
+  "updated": "November 2026"
+}</script>
+
+<!-- GUIDES: article content (plain JSON). -->
+<script type="application/json" id="guides-data">[
+ {
+  "slug": "v60",
+  "title": "V60: Die klare Tasse",
+  "name": "V60",
+  "method": "Hario V60",
+  "category": "filter",
+  "difficulty": "Mittel",
+  "image": "photo-1657040111323-0aa59a7af59d",
+  "alt": "Keramik-Handfilter V60 auf einer Glaskanne, die auf einer Kaffeewaage steht",
+  "excerpt": "Der Handfilter, mit dem die meisten in die Specialty-Welt einsteigen. Mit 15 g Kaffee, ruhigem Aufguss und drei Minuten Zeit holst du Frucht und Klarheit aus hellen Röstungen.",
+  "ratio": "1:16,7",
+  "time": "ca. 3 Min.",
+  "grind": "mittelfein",
+  "grindLevel": 3,
+  "facts": [
+   [
+    "Kaffee",
+    "15 g"
+   ],
+   [
+    "Wasser",
+    "250 g"
+   ],
+   [
+    "Verhältnis",
+    "1:16,7"
+   ],
+   [
+    "Temperatur",
+    "93–96 °C"
+   ],
+   [
+    "Brühzeit",
+    "2:45–3:15 Min."
+   ],
+   [
+    "Ergibt",
+    "1 große Tasse"
+   ]
+  ],
+  "intro": [
+   "Der V60 ist ein kegelförmiger Handfilter mit spiralförmigen Rillen und einer großen Öffnung. Das Wasser läuft schnell durch – deshalb bestimmst du mit Mahlgrad und Gießtempo fast allein, wie dein Kaffee schmeckt. Das klingt nach Arbeit, ist aber genau der Grund, warum er so gut ist: Du hast die volle Kontrolle.",
+   "Dieses Rezept ist bewusst einfach gehalten: ein Bloom, zwei Aufgüsse, fertig. Damit kommst du sofort zu einer sauberen Tasse und hast eine verlässliche Basis, um später zu experimentieren."
+  ],
+  "gear": [
+   "Hario V60 (Größe 01 oder 02) und passender Papierfilter",
+   "Kaffeemühle mit Kegel- oder Scheibenmahlwerk",
+   "Waage mit 0,1-g-Schritten und Timer",
+   "Wasserkocher, ideal mit Schwanenhals",
+   "Tasse oder Glaskanne"
+  ],
+  "steps": [
+   {
+    "time": "Vorher",
+    "title": "Filter spülen",
+    "text": "Wasser aufkochen. Den Papierfilter an der Naht knicken, in den V60 legen und gründlich mit heißem Wasser übergießen. Das entfernt den Papiergeschmack und wärmt alles vor. Spülwasser wegschütten."
+   },
+   {
+    "time": "Vorher",
+    "title": "Mahlen und einfüllen",
+    "text": "15 g Kaffee mittelfein mahlen – etwa so fein wie Tafelsalz. In den Filter geben, sanft rütteln, bis das Kaffeebett eben ist, und eine kleine Mulde in die Mitte drücken. Waage auf null stellen."
+   },
+   {
+    "time": "0:00",
+    "title": "Bloom",
+    "text": "45 g Wasser kreisend aufgießen, bis alles Kaffeemehl nass ist, und den V60 kurz schwenken. Jetzt entweicht Kohlendioxid – das Bett wölbt sich und blubbert. 45 Sekunden warten."
+   },
+   {
+    "time": "0:45",
+    "title": "Erster Aufguss",
+    "text": "In langsamen Kreisen von der Mitte nach außen gießen, bis die Waage 150 g zeigt. Den Rand des Filters möglichst nicht direkt treffen."
+   },
+   {
+    "time": "1:15",
+    "title": "Zweiter Aufguss",
+    "text": "Etwas langsamer weitergießen, bis 250 g erreicht sind. Danach den V60 einmal sanft schwenken, damit sich das Kaffeebett flach setzt."
+   },
+   {
+    "time": "ca. 3:00",
+    "title": "Durchlaufen lassen",
+    "text": "Warten, bis das Wasser vollständig durchgelaufen ist – ideal nach 2:45 bis 3:15 Minuten. Kaffee umrühren und kurz abkühlen lassen: Viele Aromen zeigen sich erst, wenn er etwas kühler ist."
+   }
+  ],
+  "fixes": [
+   {
+    "taste": "Sauer, dünn oder salzig",
+    "fix": "Feiner mahlen oder heißeres Wasser nehmen. Läuft der Aufguss in weniger als 2:30 Minuten durch, ist der Mahlgrad fast immer zu grob."
+   },
+   {
+    "taste": "Bitter, trocken, kratzig",
+    "fix": "Gröber mahlen. Dauert der Durchlauf deutlich länger als 3:30 Minuten, verstopft feines Kaffeemehl den Filter."
+   },
+   {
+    "taste": "Flach, ohne Charakter",
+    "fix": "Die Bohnen prüfen: Liegt das Röstdatum schon viele Wochen zurück, hilft kein Rezept – frische Bohnen schon."
+   }
+  ],
+  "tip": "Schreib dir Mahlgrad, Durchlaufzeit und Geschmack auf. Nach drei, vier Tassen kennst du deine Bohne – und hast dein eigenes Rezept."
+ },
+ {
+  "slug": "aeropress",
+  "title": "AeroPress: Kaffee in zwei Minuten",
+  "name": "AeroPress",
+  "method": "AeroPress",
+  "category": "filter",
+  "difficulty": "Leicht",
+  "image": "photo-1651051323638-78180db005ff",
+  "alt": "Blick von oben in eine AeroPress mit frisch aufgegossenem Kaffee und feinem Schaum",
+  "excerpt": "Robust, schnell und kaum kaputt zu kriegen: Die AeroPress verzeiht Fehler wie kein anderes Gerät. Ideal für den Einstieg, fürs Büro und für unterwegs.",
+  "ratio": "1:15",
+  "time": "ca. 3 Min.",
+  "grind": "fein bis mittel",
+  "grindLevel": 2,
+  "facts": [
+   [
+    "Kaffee",
+    "15 g"
+   ],
+   [
+    "Wasser",
+    "225 g"
+   ],
+   [
+    "Verhältnis",
+    "1:15"
+   ],
+   [
+    "Temperatur",
+    "90–95 °C"
+   ],
+   [
+    "Brühzeit",
+    "2:30 Min. + Pressen"
+   ],
+   [
+    "Ergibt",
+    "1 Tasse"
+   ]
+  ],
+  "intro": [
+   "Die AeroPress ist eine Mischung aus Immersion und Druck: Der Kaffee zieht wie in einer French Press und wird dann durch einen Papierfilter gepresst. Das Ergebnis ist klar wie Filterkaffee, hat aber mehr Körper.",
+   "Weil Ziehzeit und Druck so gut kontrollierbar sind, verzeiht die AeroPress kleine Fehler beim Mahlgrad oder bei der Temperatur. Genau deshalb ist sie das perfekte Gerät, um neue Bohnen kennenzulernen."
+  ],
+  "gear": [
+   "AeroPress (Original, Clear oder Go) mit Papierfilter",
+   "Kaffeemühle",
+   "Waage mit Timer",
+   "Wasserkocher",
+   "Stabile Tasse oder Karaffe"
+  ],
+  "steps": [
+   {
+    "time": "Vorher",
+    "title": "Filter vorbereiten",
+    "text": "Einen Papierfilter in die Filterkappe legen, mit heißem Wasser anfeuchten und die Kappe auf die Brühkammer schrauben. Die AeroPress in der Standardposition auf eine stabile Tasse stellen."
+   },
+   {
+    "time": "Vorher",
+    "title": "Kaffee einfüllen",
+    "text": "15 g Kaffee fein bis mittelfein mahlen – etwas feiner als für den V60 – und in die Kammer geben. Alles zusammen auf die Waage stellen und tarieren."
+   },
+   {
+    "time": "0:00",
+    "title": "Aufgießen",
+    "text": "225 g Wasser mit 90 bis 95 °C zügig aufgießen, bis alles Kaffeemehl gleichmäßig nass ist. Den Stempel sofort etwa einen Zentimeter tief aufsetzen: Das Vakuum verhindert, dass Kaffee vorzeitig durchtropft."
+   },
+   {
+    "time": "2:00",
+    "title": "Schwenken",
+    "text": "Die AeroPress samt Tasse vorsichtig schwenken, damit sich das Kaffeemehl vom Rand löst. 30 Sekunden warten."
+   },
+   {
+    "time": "2:30",
+    "title": "Pressen",
+    "text": "Mit gleichmäßigem, sanftem Druck etwa 20 bis 30 Sekunden lang nach unten drücken. Wenn es zischt, ist die Kammer leer – fertig."
+   },
+   {
+    "time": "Danach",
+    "title": "Anpassen und reinigen",
+    "text": "Nach Geschmack mit etwas heißem Wasser verlängern. Zum Reinigen die Kappe abschrauben und den Kaffeepuck mit dem Stempel direkt in den Biomüll drücken."
+   }
+  ],
+  "fixes": [
+   {
+    "taste": "Wässrig, wenig Aroma",
+    "fix": "Feiner mahlen oder die Ziehzeit um 30 Sekunden verlängern."
+   },
+   {
+    "taste": "Bitter oder stumpf",
+    "fix": "Gröber mahlen, das Wasser etwas kühler nehmen (um 85 °C) oder kürzer ziehen lassen."
+   },
+   {
+    "taste": "Pressen geht sehr schwer",
+    "fix": "Der Mahlgrad ist zu fein. Eine Stufe gröber mahlen – und nicht mit Gewalt drücken."
+   }
+  ],
+  "tip": "Die AeroPress verzeiht fast alles. Nutze das: Probier neue Bohnen zuerst hier, bevor du sie im V60 feinjustierst."
+ },
+ {
+  "slug": "espresso",
+  "title": "Espresso: Der erste gute Shot",
+  "name": "Espresso",
+  "method": "Siebträger",
+  "category": "espresso",
+  "difficulty": "Anspruchsvoll",
+  "image": "photo-1777558578066-44266564ee65",
+  "alt": "Frischer Espresso läuft aus dem Auslauf in ein kleines Glas",
+  "excerpt": "Espresso ist Präzisionsarbeit: 18 g Kaffee, 36 g in der Tasse, 25 bis 30 Sekunden. Hier lernst du, deinen Shot systematisch einzustellen, statt zu raten.",
+  "ratio": "1:2",
+  "time": "25–30 s",
+  "grind": "fein",
+  "grindLevel": 1,
+  "facts": [
+   [
+    "Kaffee",
+    "18 g"
+   ],
+   [
+    "In der Tasse",
+    "36 g"
+   ],
+   [
+    "Verhältnis",
+    "1:2"
+   ],
+   [
+    "Temperatur",
+    "90–94 °C"
+   ],
+   [
+    "Bezugszeit",
+    "25–30 Sekunden"
+   ],
+   [
+    "Ergibt",
+    "1 doppelten Espresso"
+   ]
+  ],
+  "intro": [
+   "Beim Espresso presst die Maschine heißes Wasser mit rund 9 bar durch ein fest gepresstes Kaffeebett. In weniger als einer halben Minute entsteht ein konzentrierter, fast sirupartiger Kaffee mit Crema – vorausgesetzt, Mahlgrad, Menge und Zeit passen zusammen.",
+   "Das Grundrezept ist ein Verhältnis von 1:2: Aus 18 g Kaffee werden 36 g Espresso. Von hier aus stellst du nur noch eine einzige Variable ein – den Mahlgrad."
+  ],
+  "gear": [
+   "Siebträgermaschine mit Doppelsieb",
+   "Espressomühle mit sehr feiner, stufenloser oder feinstufiger Einstellung",
+   "Tamper in der passenden Größe",
+   "Waage mit 0,1-g-Schritten, die unter den Siebträger passt",
+   "Vorgewärmte Espressotasse"
+  ],
+  "steps": [
+   {
+    "time": "Vorher",
+    "title": "Maschine aufheizen",
+    "text": "Die Maschine mit eingespanntem Siebträger vollständig aufheizen lassen – je nach Modell wenige Minuten bis eine halbe Stunde. Die Tasse vorwärmen."
+   },
+   {
+    "time": "Vorher",
+    "title": "Dosieren",
+    "text": "Den Siebträger trocken wischen, auf die Waage stellen und 18 g frisch gemahlenen Kaffee einfüllen."
+   },
+   {
+    "time": "Vorher",
+    "title": "Verteilen und tampen",
+    "text": "Das Kaffeemehl gleichmäßig verteilen, zum Beispiel mit einer feinen Nadel oder durch leichtes Klopfen. Dann waagerecht und fest tampen – gleichmäßiger Druck ist wichtiger als maximale Kraft."
+   },
+   {
+    "time": "Vorher",
+    "title": "Brühgruppe spülen",
+    "text": "Kurz Wasser durch die Brühgruppe laufen lassen. Das entfernt alte Kaffeereste und stabilisiert die Temperatur."
+   },
+   {
+    "time": "0:00",
+    "title": "Bezug starten",
+    "text": "Siebträger einspannen, Tasse auf die Waage stellen, Bezug und Timer gleichzeitig starten."
+   },
+   {
+    "time": "0:25–0:30",
+    "title": "Bei 36 g stoppen",
+    "text": "Den Bezug stoppen, sobald 36 g in der Tasse sind. Landest du dabei zwischen 25 und 30 Sekunden, passt der Mahlgrad."
+   }
+  ],
+  "fixes": [
+   {
+    "taste": "Läuft zu schnell, schmeckt sauer",
+    "fix": "Unter 20 Sekunden ist der Mahlgrad zu grob. Eine Stufe feiner mahlen."
+   },
+   {
+    "taste": "Läuft zu langsam, schmeckt bitter",
+    "fix": "Über 35 Sekunden ist der Mahlgrad zu fein. Eine Stufe gröber mahlen."
+   },
+   {
+    "taste": "Spritzt oder läuft ungleichmäßig",
+    "fix": "Das Wasser findet Kanäle im Kaffeebett. Gründlicher verteilen und gerade tampen."
+   }
+  ],
+  "tip": "Ändere immer nur eine Variable: zuerst den Mahlgrad, erst danach die Menge. Sonst weißt du nie, was gewirkt hat."
+ },
+ {
+  "slug": "cold-brew",
+  "title": "Cold Brew: Zwölf Stunden Geduld",
+  "name": "Cold Brew",
+  "method": "Cold Brew",
+  "category": "filter",
+  "difficulty": "Leicht",
+  "image": "photo-1461023058943-07fcbe16d735",
+  "alt": "Glas mit kaltem Kaffee auf Eis, in dem sich Milch langsam verteilt",
+  "excerpt": "Kaltes Wasser, grober Mahlgrad, eine Nacht im Kühlschrank: Cold Brew schmeckt weich, schokoladig und kaum bitter – und funktioniert auch im Winter.",
+  "ratio": "1:8",
+  "time": "12–18 Std.",
+  "grind": "sehr grob",
+  "grindLevel": 6,
+  "facts": [
+   [
+    "Kaffee",
+    "100 g"
+   ],
+   [
+    "Wasser",
+    "800 g, kalt"
+   ],
+   [
+    "Verhältnis",
+    "1:8 (Konzentrat)"
+   ],
+   [
+    "Temperatur",
+    "Kühlschrank"
+   ],
+   [
+    "Ziehzeit",
+    "12–18 Stunden"
+   ],
+   [
+    "Ergibt",
+    "ca. 600 ml Konzentrat"
+   ]
+  ],
+  "intro": [
+   "Bei Cold Brew übernimmt die Zeit die Arbeit, die sonst heißes Wasser leistet. Weil kaltes Wasser langsamer extrahiert, lösen sich weniger Bitterstoffe und Säuren – der Kaffee wird rund, süßlich und sehr weich.",
+   "Dieses Rezept ergibt ein Konzentrat, das du nach Geschmack mit Wasser oder Milch verdünnst. Gut verschlossen hält es sich im Kühlschrank etwa eine Woche."
+  ],
+  "gear": [
+   "Großes Glas oder Krug mit Deckel (mindestens 1 Liter)",
+   "Kaffeemühle mit grober Einstellung",
+   "Feines Sieb",
+   "Papierfilter, zum Beispiel für V60 oder Chemex",
+   "Kaltes, gefiltertes Wasser"
+  ],
+  "steps": [
+   {
+    "time": "Abends",
+    "title": "Grob mahlen",
+    "text": "100 g Kaffee sehr grob mahlen – gröber als für die French Press, etwa wie grobes Meersalz."
+   },
+   {
+    "time": "Abends",
+    "title": "Ansetzen",
+    "text": "Den Kaffee ins Glas geben, 800 g kaltes Wasser aufgießen und umrühren, bis kein trockenes Pulver mehr zu sehen ist."
+   },
+   {
+    "time": "Über Nacht",
+    "title": "Ziehen lassen",
+    "text": "Abdecken und 12 bis 18 Stunden in den Kühlschrank stellen. Kürzer wird es dünn, deutlich länger schmeckt es holzig."
+   },
+   {
+    "time": "Am Morgen",
+    "title": "Filtern",
+    "text": "Erst durch ein feines Sieb gießen, dann durch einen Papierfilter. Das dauert ein paar Minuten – Geduld lohnt sich, sonst wird der Kaffee trüb."
+   },
+   {
+    "time": "Servieren",
+    "title": "Verdünnen",
+    "text": "Das Konzentrat etwa 1:1 mit kaltem Wasser oder Milch mischen und über Eis gießen. Für eine heiße Tasse mit heißem Wasser verdünnen."
+   },
+   {
+    "time": "Danach",
+    "title": "Kühl aufbewahren",
+    "text": "In einer verschlossenen Flasche im Kühlschrank lagern und innerhalb von etwa einer Woche aufbrauchen."
+   }
+  ],
+  "fixes": [
+   {
+    "taste": "Zu schwach",
+    "fix": "Das Konzentrat weniger stark verdünnen oder beim nächsten Mal 120 g Kaffee auf 800 g Wasser nehmen."
+   },
+   {
+    "taste": "Holzig oder bitter",
+    "fix": "Kürzer ziehen lassen (12 Stunden) und gröber mahlen."
+   },
+   {
+    "taste": "Trüb und schlammig",
+    "fix": "Ein zweites Mal durch einen frischen Papierfilter laufen lassen."
+   }
+  ],
+  "tip": "Cold Brew ist kein reines Sommergetränk: Mit heißem Wasser aufgegossen, wird daraus ein besonders milder Kaffee für kalte Berliner Wintertage."
+ },
+ {
+  "slug": "french-press",
+  "title": "French Press: Voll und überraschend sauber",
+  "name": "French Press",
+  "method": "French Press",
+  "category": "filter",
+  "difficulty": "Leicht",
+  "image": "photo-1583577012061-d69d2dbc900a",
+  "alt": "French Press aus Glas mit frisch gebrühtem Kaffee vor hellem, unscharfem Hintergrund",
+  "excerpt": "Vier Minuten ziehen, Kruste abschöpfen, fünf Minuten warten: Mit diesem Trick wird French-Press-Kaffee vollmundig und trotzdem fast ohne Bodensatz.",
+  "ratio": "1:16,7",
+  "time": "ca. 9 Min.",
+  "grind": "grob",
+  "grindLevel": 5,
+  "facts": [
+   [
+    "Kaffee",
+    "30 g"
+   ],
+   [
+    "Wasser",
+    "500 g"
+   ],
+   [
+    "Verhältnis",
+    "1:16,7"
+   ],
+   [
+    "Temperatur",
+    "94–96 °C"
+   ],
+   [
+    "Brühzeit",
+    "4 + 5 Minuten"
+   ],
+   [
+    "Ergibt",
+    "2 Tassen"
+   ]
+  ],
+  "intro": [
+   "Die French Press ist ein reines Immersionsverfahren: Kaffee und Wasser ziehen gemeinsam, ein Metallsieb trennt am Ende das Kaffeemehl ab. Weil das Sieb Öle und feine Partikel durchlässt, schmeckt der Kaffee besonders vollmundig.",
+   "Der Nachteil ist meist der Schlamm am Tassenboden. Mit einer einfachen Technik, bekannt gemacht durch den Barista-Weltmeister James Hoffmann – Kruste abschöpfen, warten, den Stempel nur bis zur Oberfläche drücken –, bekommst du ihn fast vollständig in den Griff."
+  ],
+  "gear": [
+   "French Press für mindestens 0,5 Liter",
+   "Kaffeemühle mit grober Einstellung",
+   "Waage mit Timer",
+   "Wasserkocher",
+   "Zwei Löffel zum Abschöpfen"
+  ],
+  "steps": [
+   {
+    "time": "Vorher",
+    "title": "Vorwärmen",
+    "text": "Die Kanne mit heißem Wasser ausspülen und das Wasser wegschütten."
+   },
+   {
+    "time": "Vorher",
+    "title": "Grob mahlen",
+    "text": "30 g Kaffee grob mahlen – etwa wie grobes Meersalz – und in die Kanne geben."
+   },
+   {
+    "time": "0:00",
+    "title": "Aufgießen",
+    "text": "500 g frisch aufgekochtes Wasser zügig aufgießen, sodass alles Kaffeemehl nass wird. Den Deckel locker auflegen, ohne zu drücken."
+   },
+   {
+    "time": "4:00",
+    "title": "Kruste brechen",
+    "text": "Die Kruste an der Oberfläche mit einem Löffel aufbrechen und kurz umrühren. Schaum und schwimmende Partikel mit zwei Löffeln abschöpfen."
+   },
+   {
+    "time": "4:00–9:00",
+    "title": "Warten",
+    "text": "Weitere fünf Minuten ruhen lassen. In dieser Zeit sinkt das feine Kaffeemehl auf den Boden."
+   },
+   {
+    "time": "ca. 9:00",
+    "title": "Langsam ausgießen",
+    "text": "Den Stempel nur bis zur Oberfläche des Kaffees drücken, nicht bis ganz nach unten. Langsam ausgießen und den Kaffee komplett umfüllen, damit er nicht weiterzieht."
+   }
+  ],
+  "fixes": [
+   {
+    "taste": "Schlammig, sandig",
+    "fix": "Länger warten, langsamer ausgießen und den Stempel nicht bis nach unten drücken."
+   },
+   {
+    "taste": "Bitter",
+    "fix": "Gröber mahlen und den Kaffee direkt nach dem Ausgießen komplett aus der Kanne nehmen."
+   },
+   {
+    "taste": "Dünn",
+    "fix": "Etwas feiner mahlen oder 32 g Kaffee nehmen."
+   }
+  ],
+  "tip": "Die fünf Minuten Wartezeit nach dem Umrühren sind der ganze Trick. Sie machen aus der French Press einen erstaunlich sauberen Kaffee."
+ },
+ {
+  "slug": "chemex",
+  "title": "Chemex: Für zwei und für Sonntage",
+  "name": "Chemex",
+  "method": "Chemex",
+  "category": "filter",
+  "difficulty": "Mittel",
+  "image": "photo-1522737799611-b1119d527dc4",
+  "alt": "Chemex-Karaffe mit Holzkragen und Papierfilter, dahinter ein Wasserkessel mit Schwanenhals",
+  "excerpt": "Dicke Filter, große Karaffe, sehr klare Tasse: Die Chemex ist der Handfilter für mehrere Tassen – ideal, wenn Besuch da ist oder der Morgen länger dauern darf.",
+  "ratio": "1:16,7",
+  "time": "4–4:30 Min.",
+  "grind": "mittelgrob",
+  "grindLevel": 4,
+  "facts": [
+   [
+    "Kaffee",
+    "30 g"
+   ],
+   [
+    "Wasser",
+    "500 g"
+   ],
+   [
+    "Verhältnis",
+    "1:16,7"
+   ],
+   [
+    "Temperatur",
+    "94–96 °C"
+   ],
+   [
+    "Brühzeit",
+    "4–4:30 Min."
+   ],
+   [
+    "Ergibt",
+    "2 Tassen"
+   ]
+  ],
+  "intro": [
+   "Die Chemex wurde 1941 erfunden und sieht bis heute aus wie ein Laborglas mit Holzkragen. Ihr Geheimnis sind die besonders dicken Papierfilter: Sie halten fast alle Öle und Schwebstoffe zurück und machen den Kaffee außergewöhnlich klar und leicht.",
+   "Weil die Filter langsamer durchlaufen, mahlst du gröber als für den V60. Das Rezept ist für zwei Tassen ausgelegt – perfekt zum Teilen."
+  ],
+  "gear": [
+   "Chemex für 6 Tassen mit Original-Chemex-Filter",
+   "Kaffeemühle",
+   "Waage mit Timer",
+   "Wasserkocher mit Schwanenhals",
+   "Zwei Tassen"
+  ],
+  "steps": [
+   {
+    "time": "Vorher",
+    "title": "Filter einlegen und spülen",
+    "text": "Den Filter so einlegen, dass die dreifache Papierlage zum Ausguss zeigt. Mit heißem Wasser gründlich spülen und das Wasser über den Ausguss abgießen, während du den Filter festhältst."
+   },
+   {
+    "time": "Vorher",
+    "title": "Mahlen",
+    "text": "30 g Kaffee mittel bis mittelgrob mahlen – etwa wie grober Sand. Einfüllen, glatt rütteln, Waage tarieren."
+   },
+   {
+    "time": "0:00",
+    "title": "Bloom",
+    "text": "60 g Wasser kreisend aufgießen, bis alles nass ist. 45 Sekunden warten."
+   },
+   {
+    "time": "0:45",
+    "title": "Erster Aufguss",
+    "text": "Langsam und kreisend bis 300 g aufgießen. Der Wasserstand sollte etwa zwei Zentimeter unter dem Filterrand bleiben."
+   },
+   {
+    "time": "1:45",
+    "title": "Zweiter Aufguss",
+    "text": "Sobald der Pegel etwas gesunken ist, bis 500 g auffüllen."
+   },
+   {
+    "time": "ca. 4:15",
+    "title": "Durchlaufen lassen und servieren",
+    "text": "Warten, bis der Kaffee durchgelaufen ist – ideal nach 4 bis 4:30 Minuten. Den Filter entfernen, die Karaffe schwenken und auf zwei Tassen verteilen."
+   }
+  ],
+  "fixes": [
+   {
+    "taste": "Läuft ewig, schmeckt bitter",
+    "fix": "Gröber mahlen. Liegt der Filter am Ausguss flach an, kann keine Luft entweichen – die dreifache Lage gehört immer über den Ausguss."
+   },
+   {
+    "taste": "Dünn oder sauer",
+    "fix": "Etwas feiner mahlen oder heißeres Wasser nehmen."
+   },
+   {
+    "taste": "Schmeckt nach Papier",
+    "fix": "Den Filter vor dem Brühen gründlicher spülen."
+   }
+  ],
+  "tip": "Plan für die Chemex ein paar Minuten mehr ein. Dafür bekommst du eine der klarsten Tassen, die ein Handfilter hergibt."
+ }
+]</script>
+
+<!-- COMMENTS: approved reader comments only, e.g.
+     [{"name":"Anna","date":"2026-11-20","guide":"v60","text":"…"}]  – never invent entries. -->
+<script type="application/json" id="comments-data">[]</script>
+
+<!-- THIRD-PARTY SCRIPTS (analytics, pixel …): load them only after consent, e.g.
+     <script>KBJ.onConsent(function () { /* create and append the vendor script here */ });</script>
+     Then also mention the service in the consent bar text and in the Datenschutzerklärung. -->
+<!-- App logic -->
+<script>(function () {
+  'use strict';
+
+  /* ---------- Helpers ---------- */
+  var SVG_NS = 'http://www.w3.org/2000/svg';
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function $(sel, root) { return (root || document).querySelector(sel); }
+  function $$(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
+  function has(obj, key) { return Object.prototype.hasOwnProperty.call(obj, key); }
+
+  function readJSON(id, fallback) {
+    var el = document.getElementById(id);
+    if (!el) return fallback;
+    try { return JSON.parse(el.textContent); } catch (err) { return fallback; }
+  }
+
+  function append(el, kids) {
+    kids.forEach(function (c) {
+      if (Array.isArray(c)) { append(el, c); return; }
+      if (c === null || c === undefined || c === false) return;
+      el.appendChild(typeof c === 'string' || typeof c === 'number' ? document.createTextNode(String(c)) : c);
+    });
+    return el;
+  }
+
+  /* Element builder: text is always set via textContent, never parsed as HTML. */
+  function h(tag, props) {
+    var el = document.createElement(tag);
+    if (props) {
+      Object.keys(props).forEach(function (k) {
+        var v = props[k];
+        if (v === null || v === undefined || v === false) return;
+        if (k === 'class') el.className = v;
+        else if (k === 'text') el.textContent = v;
+        else if (k === 'dataset') Object.keys(v).forEach(function (d) { el.dataset[d] = v[d]; });
+        else el.setAttribute(k, v === true ? '' : String(v));
+      });
+    }
+    return append(el, Array.prototype.slice.call(arguments, 2));
+  }
+
+  function svgEl(tag, attrs) {
+    var el = document.createElementNS(SVG_NS, tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) { el.setAttribute(k, String(attrs[k])); });
+    return el;
+  }
+
+  function icon(name) {
+    var s = svgEl('svg', { 'class': 'icon', 'aria-hidden': 'true', focusable: 'false' });
+    s.appendChild(svgEl('use', { href: '#i-' + name }));
+    return s;
+  }
+
+  /* ---------- Data ---------- */
+  var EMAIL_RE = /^[^\s@<>()[\]\\,;:"?&=]+@[^\s@<>()[\]\\,;:"?&=]+\.[a-z]{2,}$/i;
+  var SITE = Object.assign({
+    name: 'Bohnenglück', author: 'Lukas Weber', email: 'hallo@bohnenglueck-berlin.blog',
+    street: '', postalCode: '', city: 'Berlin', country: 'Deutschland',
+    formEndpoint: '', formProcessor: '', updated: 'November 2026'
+  }, readJSON('site-config', {}));
+  if (!EMAIL_RE.test(SITE.email)) SITE.email = 'hallo@bohnenglueck-berlin.blog';
+
+  var GUIDES = readJSON('guides-data', []);
+  var COMMENTS = readJSON('comments-data', []);
+  var BY_SLUG = Object.create(null);
+  GUIDES.forEach(function (g, i) { g.index = i; BY_SLUG[g.slug] = g; });
+  var CATEGORY = { filter: 'Filterkaffee', espresso: 'Espresso' };
+  var FEATURED = ['v60', 'aeropress', 'french-press'];
+  var LEGAL = { datenschutz: 'Datenschutzerklärung', nutzungsbedingungen: 'Nutzungsbedingungen', impressum: 'Impressum' };
+
+  /* ---------- Images (Unsplash) ---------- */
+  function imgUrl(id, w, ratio) {
+    return 'https://images.unsplash.com/' + id + '?auto=format&fit=crop&w=' + w +
+      (ratio ? '&h=' + Math.round(w * ratio) : '') + '&q=70';
+  }
+  function responsiveImg(id, o) {
+    var w0 = o.widths[Math.min(1, o.widths.length - 1)];
+    return h('img', {
+      src: imgUrl(id, w0, o.ratio),
+      srcset: o.widths.map(function (w) { return imgUrl(id, w, o.ratio) + ' ' + w + 'w'; }).join(', '),
+      sizes: o.sizes, alt: o.alt || '', width: w0, height: Math.round(w0 * o.ratio),
+      loading: o.eager ? 'eager' : 'lazy', decoding: 'async'
+    });
+  }
+
+  /* ---------- Grind visuals ---------- */
+  function grindDots(level) {
+    var s = svgEl('svg', { 'class': 'dots', viewBox: '0 0 51 10', 'aria-hidden': 'true', focusable: 'false' });
+    var radii = [1.6, 2.1, 2.7, 3.3, 3.9, 4.6];
+    var x = 0.4;
+    radii.forEach(function (r, i) {
+      x += r;
+      var c = svgEl('circle', { cx: x.toFixed(2), cy: 5, r: r });
+      if (i + 1 === level) c.setAttribute('class', 'is-on');
+      s.appendChild(c);
+      x += r + 2.4;
+    });
+    return s;
+  }
+
+  function mulberry32(seed) {
+    return function () {
+      seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+      var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  var GRAIN = [{ r: 0.75, n: 760 }, { r: 1.15, n: 360 }, { r: 1.7, n: 160 }, { r: 2.4, n: 84 }, { r: 3.2, n: 46 }, { r: 4.3, n: 26 }];
+  var GRAIN_TONES = ['#3A2416', '#58392A', '#7A5238'];
+
+  /* Deterministic "macro shot" of ground coffee for a grind level (1 = fine … 6 = very coarse). */
+  function grindSwatch(level) {
+    var c = 50, R = 46, spec = GRAIN[level - 1], rnd = mulberry32(level * 7919 + 13);
+    var paths = ['', '', ''];
+    for (var i = 0; i < spec.n; i++) {
+      var rr = spec.r * (0.65 + rnd() * 0.7);
+      var ang = rnd() * Math.PI * 2;
+      var dist = Math.sqrt(rnd()) * (R - rr - 1);
+      var x = c + Math.cos(ang) * dist, y = c + Math.sin(ang) * dist;
+      var tone = Math.floor(rnd() * 3);
+      if (level <= 2) {
+        var a = rr.toFixed(2), d2 = (2 * rr).toFixed(2);
+        paths[tone] += 'M' + (x - rr).toFixed(2) + ' ' + y.toFixed(2) + 'a' + a + ' ' + a + ' 0 1 0 ' + d2 + ' 0a' + a + ' ' + a + ' 0 1 0 -' + d2 + ' 0';
+      } else {
+        var k = 5 + Math.floor(rnd() * 3), rot = rnd() * Math.PI * 2, d = '';
+        for (var j = 0; j < k; j++) {
+          var aa = rot + (j / k) * Math.PI * 2 + (rnd() - 0.5) * 0.5;
+          var rad = rr * (0.72 + rnd() * 0.42);
+          d += (j ? 'L' : 'M') + (x + Math.cos(aa) * rad).toFixed(2) + ' ' + (y + Math.sin(aa) * rad).toFixed(2);
+        }
+        paths[tone] += d + 'Z';
+      }
+    }
+    var s = svgEl('svg', { 'class': 'grind__swatch', viewBox: '0 0 100 100', 'aria-hidden': 'true', focusable: 'false' });
+    s.appendChild(svgEl('circle', { cx: c, cy: c, r: 48, fill: '#FBF7F1', stroke: 'rgba(42,27,18,.16)', 'stroke-width': 1 }));
+    var g = svgEl('g', { 'class': 'grain' });
+    g.style.setProperty('--i', String(level - 1));
+    paths.forEach(function (d, t) { if (d) g.appendChild(svgEl('path', { d: d, fill: GRAIN_TONES[t] })); });
+    s.appendChild(g);
+    return s;
+  }
+
+  /* ---------- Renderers ---------- */
+  function fact(label, value) { return h('div', null, h('dt', { text: label }), h('dd', { text: value })); }
+  function grindFact(g) { return h('div', null, h('dt', { text: 'Mahlgrad' }), h('dd', null, grindDots(g.grindLevel), g.grind)); }
+
+  function guideCard(g, variant, headingTag) {
+    var opts = variant === 'lg'
+      ? { ratio: 0.75, widths: [640, 960, 1280], sizes: '(min-width: 1280px) 640px, (min-width: 900px) 52vw, calc(100vw - 40px)' }
+      : variant === 'row'
+        ? { ratio: 1, widths: [240, 400, 560], sizes: '(min-width: 1280px) 190px, (min-width: 900px) 15vw, 112px' }
+        : { ratio: 0.75, widths: [400, 640, 960], sizes: '(min-width: 1280px) 370px, (min-width: 700px) 45vw, calc(100vw - 40px)' };
+    return h('article', { 'class': 'guide' + (variant ? ' guide--' + variant : ''), dataset: { category: g.category, slug: g.slug } },
+      h('div', { 'class': 'guide__media' }, responsiveImg(g.image, opts)),
+      h('div', { 'class': 'guide__body' },
+        h('p', { 'class': 'guide__cat', text: CATEGORY[g.category] }),
+        h(headingTag || 'h3', { 'class': 'guide__title' }, h('a', { href: '#/rezepte/' + g.slug, text: g.title })),
+        h('p', { 'class': 'guide__excerpt', text: g.excerpt }),
+        h('dl', { 'class': 'facts' }, fact('Verhältnis', g.ratio), fact('Zeit', g.time), grindFact(g))));
+  }
+
+  function renderGrindScale() {
+    var list = $('#grind-scale');
+    if (!list) return;
+    var sorted = GUIDES.slice().sort(function (a, b) { return a.grindLevel - b.grindLevel; });
+    list.replaceChildren.apply(list, sorted.map(function (g) {
+      return h('li', { 'class': 'grind__item' },
+        h('a', { 'class': 'grind__link', href: '#/rezepte/' + g.slug },
+          h('span', { 'class': 'grind__slot', dataset: { level: g.grindLevel } }),
+          h('span', { 'class': 'grind__method', text: g.name }),
+          h('span', { 'class': 'grind__word', text: g.grind })));
+    }));
+  }
+
+  function renderFeatured() {
+    var grid = $('#featured-grid');
+    if (!grid) return;
+    grid.replaceChildren.apply(grid, FEATURED.filter(function (s) { return BY_SLUG[s]; })
+      .map(function (s, i) { return guideCard(BY_SLUG[s], i === 0 ? 'lg' : 'row'); }));
+  }
+
+  function renderGuides() {
+    var grid = $('#guides-grid');
+    if (!grid) return;
+    grid.replaceChildren.apply(grid, GUIDES.map(function (g) { return guideCard(g, null, 'h2'); }));
+    $$('[data-filter]').forEach(function (btn) {
+      var f = btn.dataset.filter;
+      var n = f === 'all' ? GUIDES.length : GUIDES.filter(function (g) { return g.category === f; }).length;
+      var count = $('.filter__count', btn);
+      if (count) count.textContent = String(n);
+    });
+  }
+
+  function applyFilter(f, animate) {
+    if (f !== 'all' && !has(CATEGORY, f)) f = 'all';
+    $$('[data-filter]').forEach(function (btn) { btn.setAttribute('aria-pressed', String(btn.dataset.filter === f)); });
+    var visible = 0;
+    $$('#guides-grid .guide').forEach(function (card) {
+      var show = f === 'all' || card.dataset.category === f;
+      card.hidden = !show;
+      card.classList.remove('is-entering');
+      if (show) {
+        visible++;
+        if (animate && !reduceMotion.matches) { void card.offsetWidth; card.classList.add('is-entering'); }
+      }
+    });
+    var status = $('#filter-status');
+    if (status) status.textContent = visible + (visible === 1 ? ' Guide' : ' Guides') + (f === 'all' ? '' : ' in der Kategorie ' + CATEGORY[f]);
+  }
+
+  var dateFmt = new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'long', year: 'numeric' });
+  function renderComments() {
+    var list = $('#comment-list'), empty = $('#comment-empty');
+    if (!list || !empty) return;
+    var valid = (Array.isArray(COMMENTS) ? COMMENTS : []).filter(function (c) {
+      return c && typeof c.name === 'string' && typeof c.text === 'string' && c.name.trim() && c.text.trim();
+    });
+    list.replaceChildren.apply(list, valid.map(function (c) {
+      var d = c.date ? new Date(c.date) : null;
+      var g = c.guide && BY_SLUG[c.guide];
+      return h('li', { 'class': 'comment' },
+        h('p', { 'class': 'comment__meta' },
+          h('span', { 'class': 'comment__name', text: c.name.slice(0, 60) }),
+          d && !isNaN(d.getTime()) ? h('time', { datetime: d.toISOString().slice(0, 10), text: dateFmt.format(d) }) : null,
+          g ? h('a', { href: '#/rezepte/' + g.slug, text: 'zum Guide ' + g.name }) : null),
+        h('p', { 'class': 'comment__text', text: c.text.slice(0, 1200) }));
+    }));
+    list.hidden = valid.length === 0;
+    empty.hidden = valid.length > 0;
+  }
+
+  function populateGuideSelect() {
+    $$('select[data-guides]').forEach(function (sel) {
+      GUIDES.forEach(function (g) { sel.appendChild(h('option', { value: g.slug, text: g.name })); });
+    });
+  }
+
+  /* Fills [data-site] placeholders from the site config (textContent only). */
+  function fillSite(root) {
+    $$('[data-if]', root).forEach(function (el) { if (!SITE[el.dataset.if]) el.remove(); });
+    $$('[data-if-not]', root).forEach(function (el) { if (SITE[el.dataset.ifNot]) el.remove(); });
+    $$('[data-site]', root).forEach(function (el) {
+      var key = el.dataset.site;
+      if (key === 'address') {
+        var lines = [SITE.author, SITE.street, (String(SITE.postalCode || '') + ' ' + SITE.city).trim(), SITE.country]
+          .filter(function (l) { return l && String(l).trim(); });
+        el.replaceChildren();
+        lines.forEach(function (l, i) { if (i) el.appendChild(document.createElement('br')); el.appendChild(document.createTextNode(String(l))); });
+      } else if (key === 'email-link') {
+        el.textContent = SITE.email;
+        el.setAttribute('href', 'mailto:' + SITE.email);
+      } else if (has(SITE, key) && SITE[key]) {
+        el.textContent = String(SITE[key]);
+      }
+    });
+  }
+
+  /* ---------- Article & legal content ---------- */
+  function readingMinutes(g) {
+    var text = [g.excerpt, g.tip].concat(g.intro, g.gear,
+      g.steps.map(function (s) { return s.title + ' ' + s.text; }),
+      g.fixes.map(function (f) { return f.taste + ' ' + f.fix; })).join(' ');
+    return Math.max(2, Math.round(text.split(/\s+/).length / 200));
+  }
+
+  function buildArticle(g) {
+    if (!g) return null;
+    var next = GUIDES[(g.index + 1) % GUIDES.length];
+    return h('article', { 'class': 'article' },
+      h('div', { 'class': 'article__media' }, responsiveImg(g.image, {
+        alt: g.alt, ratio: 0.625, widths: [640, 960, 1400], sizes: '(min-width: 928px) 880px, 100vw', eager: true
+      })),
+      h('div', { 'class': 'article__body' },
+        h('header', null,
+          h('p', { 'class': 'article__cat', text: CATEGORY[g.category] + ', ' + g.method }),
+          h('h2', { 'class': 'article__title', id: 'modal-title', tabindex: '-1', text: g.title }),
+          h('ul', { 'class': 'article__meta' },
+            h('li', null, 'Schwierigkeit: ', h('strong', { text: g.difficulty })),
+            h('li', null, 'Lesezeit: ', h('strong', { text: readingMinutes(g) + ' Min.' })))),
+        h('div', { 'class': 'article__intro' }, g.intro.map(function (p) { return h('p', { text: p }); })),
+        h('section', { 'class': 'recipe', 'aria-labelledby': 'recipe-h' },
+          h('h3', { id: 'recipe-h', text: 'Rezept auf einen Blick' }),
+          h('dl', { 'class': 'recipe__grid' }, g.facts.map(function (f) { return fact(f[0], f[1]); }), grindFact(g))),
+        h('section', { 'aria-labelledby': 'gear-h' },
+          h('h3', { id: 'gear-h', text: 'Das brauchst du' }),
+          h('ul', { 'class': 'checklist' }, g.gear.map(function (item) { return h('li', null, icon('check'), h('span', { text: item })); }))),
+        h('section', { 'aria-labelledby': 'steps-h' },
+          h('h3', { id: 'steps-h', text: 'Schritt für Schritt' }),
+          h('ol', { 'class': 'steps' }, g.steps.map(function (s) {
+            return h('li', { 'class': 'step' },
+              h('div', { 'class': 'step__body' },
+                h('span', { 'class': 'step__time', text: s.time }),
+                h('h4', { 'class': 'step__title', text: s.title }),
+                h('p', { 'class': 'step__text', text: s.text })));
+          }))),
+        h('section', { 'aria-labelledby': 'fixes-h' },
+          h('h3', { id: 'fixes-h', text: 'Wenn es nicht schmeckt' }),
+          h('dl', { 'class': 'fixes' }, g.fixes.map(function (f) { return h('div', null, h('dt', { text: f.taste }), h('dd', { text: f.fix })); }))),
+        h('aside', { 'class': 'tip', 'aria-label': 'Tipp von ' + SITE.author.split(' ')[0] },
+          h('p', { 'class': 'tip__label', text: SITE.author.split(' ')[0] + '’ Tipp' }),
+          h('p', { 'class': 'tip__text', text: g.tip })),
+        h('footer', { 'class': 'article__foot' },
+          h('a', { 'class': 'btn btn--ghost', href: '#/rezepte/' + next.slug, text: 'Nächster Guide: ' + next.name }),
+          h('a', { 'class': 'text-link', href: '#/kontakt', dataset: { ask: g.slug }, text: 'Frage zu diesem Rezept stellen' }))));
+  }
+
+  function buildLegal(key) {
+    var tpl = document.getElementById('legal-' + key);
+    if (!tpl || !tpl.content) return null;
+    var frag = tpl.content.cloneNode(true);
+    fillSite(frag);
+    return h('div', { 'class': 'legal' }, frag);
+  }
+
+  /* ---------- Modal (native <dialog>) ---------- */
+  var modal = $('#modal');
+  var modalContent = $('#modal-content');
+  var modalState = null;
+  var lastFocus = null;
+  var closeTimer = 0;
+
+  function lockScroll(on) { document.documentElement.classList.toggle('is-locked', on); }
+
+  function openModalUI(kind, key) {
+    if (!modal) return false;
+    clearTimeout(closeTimer);
+    var same = modalState && modalState.kind === kind && modalState.key === key && modal.open;
+    if (!same) {
+      var node = kind === 'article' ? buildArticle(BY_SLUG[key]) : buildLegal(key);
+      if (!node) return false;
+      modalContent.replaceChildren(node);
+      modal.dataset.kind = kind;
+    }
+    if (!modal.open) {
+      if (!lastFocus) lastFocus = document.activeElement;
+      if (typeof modal.showModal === 'function') modal.showModal(); else modal.setAttribute('open', '');
+      lockScroll(true);
+      requestAnimationFrame(function () { modal.classList.add('is-open'); });
+    } else {
+      modal.classList.add('is-open');
+    }
+    if (!same) {
+      modal.scrollTop = 0;
+      var title = $('#modal-title', modal);
+      if (title) title.focus({ preventScroll: true });
+    }
+    modalState = { kind: kind, key: key };
+    return true;
+  }
+
+  function closeModalUI() {
+    if (!modal || (!modalState && !modal.open)) return;
+    modalState = null;
+    modal.classList.remove('is-open');
+    var finish = function () {
+      if (modal.open) modal.close();
+      lockScroll(false);
+      modalContent.replaceChildren();
+      var target = lastFocus;
+      lastFocus = null;
+      if (target && target !== document.body && document.contains(target) && target.getClientRects().length) {
+        target.focus({ preventScroll: true });
+      }
+    };
+    if (reduceMotion.matches) finish(); else closeTimer = setTimeout(finish, 240);
+  }
+
+  function requestClose() {
+    if (!modalState) return;
+    if (history.state && history.state.kbjModal) history.back();
+    else { history.replaceState({ kbj: 1 }, '', VIEW_HASH[currentView] || '#/'); render({}); }
+  }
+
+  if (modal) {
+    modal.addEventListener('cancel', function (e) { e.preventDefault(); requestClose(); });
+    modal.addEventListener('close', function () { if (modalState) requestClose(); });
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal || e.target.closest('[data-close]')) requestClose();
+    });
+  }
+
+  /* ---------- Router (hash based, no reloads) ---------- */
+  var VIEW_HASH = { start: '#/', rezepte: '#/rezepte', ueber: '#/ueber-mich', kontakt: '#/kontakt' };
+  var HASH_VIEW = { '': 'start', 'rezepte': 'rezepte', 'ueber-mich': 'ueber', 'kontakt': 'kontakt' };
+  var VIEW_TITLE = {
+    start: 'Bohnenglück – Specialty Coffee & Home Brewing aus Berlin',
+    rezepte: 'Rezepte & Guides – Bohnenglück',
+    ueber: 'Über mich – Bohnenglück',
+    kontakt: 'Kontakt – Bohnenglück'
+  };
+  var currentView = null;
+
+  function parseRoute(hash) {
+    var raw = String(hash || '').replace(/^#\/?/, '');
+    var parts;
+    try { parts = raw.split('/').map(function (p) { return decodeURIComponent(p).toLowerCase(); }); }
+    catch (e) { parts = ['']; }
+    var a = parts[0] || '', b = parts[1] || '';
+    if (a === 'rezepte' && b && BY_SLUG[b]) return { view: 'rezepte', modal: { kind: 'article', key: b } };
+    if (has(LEGAL, a)) return { view: 'start', modal: { kind: 'legal', key: a } };
+    if (has(HASH_VIEW, a)) return { view: HASH_VIEW[a], modal: null };
+    return { view: 'start', modal: null };
+  }
+
+  function showView(name, opts) {
+    currentView = name;
+    $$('.view').forEach(function (v) {
+      var on = v.dataset.view === name;
+      v.classList.toggle('is-active', on);
+      v.classList.remove('is-entering');
+      if (on && !opts.initial && !reduceMotion.matches) { void v.offsetWidth; v.classList.add('is-entering'); }
+    });
+    $$('[data-nav]').forEach(function (a) {
+      if (a.dataset.nav === name) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+    setNav(false);
+    if (!opts.initial) {
+      var y = typeof opts.restoreScroll === 'number' ? opts.restoreScroll : 0;
+      window.scrollTo(0, y);
+      var t = $('.view[data-view="' + name + '"] .view-title');
+      if (t && !opts.keepFocus) t.focus({ preventScroll: true });
+    }
+    if (name === 'start') observeGrind();
+  }
+
+  function render(opts) {
+    opts = opts || {};
+    var route = parseRoute(location.hash);
+    var st = history.state || {};
+    var base = route.view;
+    if (route.modal && st.kbjBase && has(VIEW_HASH, st.kbjBase)) base = st.kbjBase;
+    if (base !== currentView) showView(base, { initial: !!opts.initial, restoreScroll: opts.restoreScroll, keepFocus: !!route.modal });
+    if (route.modal && openModalUI(route.modal.kind, route.modal.key)) {
+      document.title = (route.modal.kind === 'article' ? BY_SLUG[route.modal.key].title : LEGAL[route.modal.key]) + ' – ' + SITE.name;
+    } else {
+      closeModalUI();
+      document.title = VIEW_TITLE[base];
+    }
+  }
+
+  function normalizeHash(x) { return !x || x === '#' ? '#/' : x; }
+  function saveScroll() {
+    try { history.replaceState(Object.assign({}, history.state, { kbjScroll: window.scrollY }), ''); } catch (e) { /* ignore */ }
+  }
+
+  function go(href) {
+    var route = parseRoute(href);
+    if (route.modal) {
+      var base = (modalState && history.state && history.state.kbjBase) || currentView || 'start';
+      var state = { kbj: 1, kbjModal: 1, kbjBase: base };
+      if (modalState) history.replaceState(state, '', href);
+      else { saveScroll(); history.pushState(state, '', href); }
+      render({});
+      return;
+    }
+    if (modalState) { history.replaceState({ kbj: 1 }, '', href); render({}); return; }
+    if (normalizeHash(href) === normalizeHash(location.hash)) {
+      window.scrollTo(0, 0);
+      var t = $('.view.is-active .view-title');
+      if (t) t.focus({ preventScroll: true });
+      return;
+    }
+    saveScroll();
+    history.pushState({ kbj: 1 }, '', href);
+    render({});
+  }
+
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest && e.target.closest('a[href^="#/"]');
+    if (!a) return;
+    e.preventDefault();
+    if (a.dataset.ask) prefillQuestion(a.dataset.ask);
+    go(a.getAttribute('href'));
+  });
+
+  window.addEventListener('popstate', function () {
+    var st = history.state || {};
+    render({ restoreScroll: typeof st.kbjScroll === 'number' ? st.kbjScroll : null });
+  });
+
+  function prefillQuestion(slug) {
+    var g = BY_SLUG[slug], ta = $('#contact-message');
+    if (!g || !ta || ta.value.trim()) return;
+    ta.value = 'Frage zum Guide „' + g.title + '“: ';
+  }
+
+  /* ---------- Header: mobile menu & scroll state ---------- */
+  var nav = $('#site-nav');
+  var navToggle = $('.nav-toggle');
+  var header = $('.site-header');
+
+  function setNav(open) {
+    if (!nav || !navToggle) return;
+    nav.classList.toggle('is-open', open);
+    navToggle.setAttribute('aria-expanded', String(open));
+    navToggle.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+  }
+  if (navToggle) navToggle.addEventListener('click', function () { setNav(!nav.classList.contains('is-open')); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav && nav.classList.contains('is-open')) { setNav(false); navToggle.focus(); }
+  });
+  document.addEventListener('click', function (e) {
+    if (nav && nav.classList.contains('is-open') && !e.target.closest('.site-header')) setNav(false);
+  });
+  var wide = window.matchMedia('(min-width: 820px)');
+  if (wide.addEventListener) wide.addEventListener('change', function (e) { if (e.matches) setNav(false); });
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () { header.classList.toggle('is-scrolled', window.scrollY > 8); ticking = false; });
+  }, { passive: true });
+
+  var skip = $('.skip-link');
+  if (skip) skip.addEventListener('click', function (e) {
+    e.preventDefault();
+    var t = $('.view.is-active .view-title') || $('#main');
+    if (t) t.focus();
+  });
+
+  /* ---------- Grind scale: swatches are drawn lazily, then one orchestrated "pour" ---------- */
+  var grindObserved = false;
+  function paintSlot(slot) { if (!slot.firstChild) slot.appendChild(grindSwatch(Number(slot.dataset.level))); }
+  /* sync = draw everything now; otherwise one swatch per idle callback (no long tasks). */
+  function paintGrind(sync) {
+    var slots = $$('.grind__slot');
+    if (sync || !window.requestIdleCallback) { slots.forEach(paintSlot); return; }
+    (function next(i) {
+      if (i >= slots.length) return;
+      window.requestIdleCallback(function () { paintSlot(slots[i]); next(i + 1); }, { timeout: 400 });
+    })(0);
+  }
+  function observeGrind() {
+    if (grindObserved) return;
+    var sec = $('.grind');
+    if (!sec) return;
+    grindObserved = true;
+    if (reduceMotion.matches || !('IntersectionObserver' in window)) { paintGrind(true); sec.classList.add('is-poured'); return; }
+    var pre = new IntersectionObserver(function (entries) {
+      if (!entries.some(function (en) { return en.isIntersecting; })) return;
+      pre.disconnect();
+      paintGrind(false);
+    }, { rootMargin: '250px 0px' });
+    pre.observe(sec);
+    var io = new IntersectionObserver(function (entries) {
+      if (!entries.some(function (en) { return en.isIntersecting; })) return;
+      io.disconnect();
+      paintGrind(true);
+      sec.classList.add('is-pouring');
+      setTimeout(function () { sec.classList.add('is-poured'); sec.classList.remove('is-pouring'); }, 1500);
+    }, { threshold: 0.3 });
+    io.observe(sec);
+  }
+
+  /* ---------- FAQ accordion ---------- */
+  $$('.acc__btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.acc');
+      var open = !item.classList.contains('is-open');
+      item.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
+
+  /* ---------- Forms ---------- */
+  var CONTROL_RE = /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g;
+  var LIMITS = { name: 60, email: 120, message: 1500, guide: 40 };
+  var loadedAt = Date.now();
+  function clean(v, max) { return String(v || '').replace(CONTROL_RE, '').trim().slice(0, max); }
+
+  var RULES = {
+    comment: {
+      name: function (v) { return v.length < 2 ? 'Bitte gib deinen Namen ein (mindestens 2 Zeichen).' : ''; },
+      message: function (v) { return v.length < 10 ? 'Dein Kommentar ist noch etwas kurz – bitte mindestens 10 Zeichen.' : ''; }
+    },
+    contact: {
+      name: function (v) { return v.length < 2 ? 'Bitte gib deinen Namen ein (mindestens 2 Zeichen).' : ''; },
+      email: function (v) { return EMAIL_RE.test(v) ? '' : 'Bitte gib eine gültige E-Mail-Adresse ein, damit ich dir antworten kann.'; },
+      message: function (v) { return v.length < 10 ? 'Deine Nachricht ist noch etwas kurz – bitte mindestens 10 Zeichen.' : ''; }
+    }
+  };
+
+  function setFieldError(input, msg) {
+    var err = document.getElementById(input.id + '-error');
+    if (err) err.textContent = msg;
+    if (msg) input.setAttribute('aria-invalid', 'true'); else input.removeAttribute('aria-invalid');
+  }
+
+  function timeoutSignal(ms) {
+    if (window.AbortSignal && typeof AbortSignal.timeout === 'function') return AbortSignal.timeout(ms);
+    var ctrl = new AbortController();
+    setTimeout(function () { ctrl.abort(); }, ms);
+    return ctrl.signal;
+  }
+
+  function deliver(kind, d) {
+    var guide = d.guide ? BY_SLUG[d.guide] : null;
+    var subject = kind === 'comment'
+      ? 'Kommentar' + (guide ? ' zum Guide ' + guide.name : '') + ' – ' + SITE.name
+      : 'Nachricht von ' + d.name + ' – ' + SITE.name;
+    var endpoint = String(SITE.formEndpoint || '');
+    var sameOrigin = /^\/(?!\/)\S*$/.test(endpoint);
+    if (sameOrigin || /^https:\/\/\S+$/i.test(endpoint)) {
+      return fetch(endpoint, {
+        method: 'POST', credentials: 'omit', referrerPolicy: 'strict-origin-when-cross-origin',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          type: kind, subject: subject, name: d.name, email: d.email || '', message: d.message,
+          guide: guide ? guide.slug : '', page: location.origin + location.pathname
+        }),
+        signal: timeoutSignal(10000)
+      }).then(function (res) {
+        if (res.ok) return 'sent';
+        /* No form backend here (local preview, static-only hosting): use the mail app instead. */
+        if (res.status === 404 || res.status === 405 || res.status === 501) return deliverByMail(kind, d, subject, guide);
+        var err = new Error('HTTP ' + res.status);
+        err.status = res.status;
+        throw err;
+      }, function (netErr) {
+        if (sameOrigin) return deliverByMail(kind, d, subject, guide);
+        throw netErr;
+      });
+    }
+    return deliverByMail(kind, d, subject, guide);
+  }
+
+  function deliverByMail(kind, d, subject, guide) {
+    var lines = kind === 'comment'
+      ? ['Name (wird veröffentlicht): ' + d.name, 'Guide: ' + (guide ? guide.title : 'Allgemein'), '', d.message]
+      : ['Name: ' + d.name, 'E-Mail: ' + d.email, '', d.message];
+    window.location.href = 'mailto:' + SITE.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\r\n'));
+    return Promise.resolve('mailto');
+  }
+
+  function setupForm(form) {
+    var kind = form.dataset.form;
+    var rules = RULES[kind];
+    if (!rules) return;
+    var wrap = form.closest('[data-form-wrap]');
+    var success = $('.form-success', wrap);
+    var status = $('.form__status', form);
+    var submit = $('[type="submit"]', form);
+    var inputs = Object.keys(rules).map(function (n) { return form.elements[n]; }).filter(Boolean);
+
+    inputs.forEach(function (input) {
+      var check = function () { setFieldError(input, rules[input.name](clean(input.value, LIMITS[input.name]))); };
+      input.addEventListener('blur', function () { if (input.value.trim()) check(); });
+      input.addEventListener('input', function () { if (input.getAttribute('aria-invalid')) check(); });
+    });
+
+    function showSuccess(mode, data) {
+      var title = $('.form-success__title', success);
+      var text = $('.form-success__text', success);
+      var first = data.name.split(/\s+/)[0];
+      var mail = h('a', { href: 'mailto:' + SITE.email, text: SITE.email });
+      if (mode === 'sent') {
+        title.textContent = 'Danke, ' + first + '!';
+        text.textContent = kind === 'comment'
+          ? 'Dein Kommentar ist angekommen. Ich lese ihn und schalte ihn nach der Prüfung hier frei.'
+          : 'Deine Nachricht ist angekommen. Ich antworte dir an ' + data.email + ', so schnell ich kann.';
+      } else {
+        title.textContent = 'Fast geschafft, ' + first + '.';
+        text.replaceChildren(kind === 'comment'
+          ? 'Dein E-Mail-Programm sollte sich jetzt mit deinem Kommentar geöffnet haben. Schick die Mail ab, dann prüfe ich ihn und schalte ihn frei. Falls sich nichts geöffnet hat, schreib direkt an '
+          : 'Dein E-Mail-Programm sollte sich jetzt mit deiner Nachricht geöffnet haben – schick sie dort ab. Falls sich nichts geöffnet hat, schreib direkt an ', mail, '.');
+      }
+      form.hidden = true;
+      success.hidden = false;
+      title.focus();
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (form.dataset.busy) return;
+      status.hidden = true;
+      var data = {};
+      ['name', 'email', 'message', 'guide'].forEach(function (n) {
+        if (form.elements[n]) data[n] = clean(form.elements[n].value, LIMITS[n]);
+      });
+      if (data.guide && !BY_SLUG[data.guide]) data.guide = '';
+      var firstInvalid = null;
+      inputs.forEach(function (input) {
+        var msg = rules[input.name](data[input.name] || '');
+        setFieldError(input, msg);
+        if (msg && !firstInvalid) firstInvalid = input;
+      });
+      if (firstInvalid) { firstInvalid.focus(); return; }
+      var bot = (form.elements.website && form.elements.website.value) || Date.now() - loadedAt < 2500;
+      form.dataset.busy = '1';
+      submit.disabled = true;
+      submit.setAttribute('aria-busy', 'true');
+      (bot ? Promise.resolve('sent') : deliver(kind, data)).then(function (mode) {
+        showSuccess(mode, data);
+        form.reset();
+      }).catch(function (err) {
+        var code = err && err.status;
+        var msg = code === 429 ? 'Zu viele Nachrichten in kurzer Zeit. Bitte versuch es in einer Minute noch einmal oder schreib direkt an '
+          : code === 400 ? 'Bitte prüfe deine Angaben und versuch es noch einmal. Alternativ erreichst du mich direkt unter '
+          : 'Das hat leider nicht geklappt. Bitte versuch es gleich noch einmal oder schreib direkt an ';
+        status.replaceChildren(msg, h('a', { href: 'mailto:' + SITE.email, text: SITE.email }), '.');
+        status.hidden = false;
+      }).then(function () {
+        delete form.dataset.busy;
+        submit.disabled = false;
+        submit.removeAttribute('aria-busy');
+      });
+    });
+
+    var again = $('[data-again]', success);
+    if (again) again.addEventListener('click', function () {
+      success.hidden = true;
+      form.hidden = false;
+      var f = $('.field__input', form);
+      if (f) f.focus();
+    });
+  }
+
+  /* ---------- Copy e-mail ---------- */
+  $$('[data-copy-email]').forEach(function (btn) {
+    var label = $('.copy-btn__label', btn);
+    var live = $('#copy-status');
+    var reset = 0;
+    btn.addEventListener('click', function () {
+      var done = function (msg) {
+        label.textContent = msg;
+        if (live) live.textContent = msg === 'Kopiert' ? 'E-Mail-Adresse kopiert' : '';
+        clearTimeout(reset);
+        reset = setTimeout(function () { label.textContent = 'Kopieren'; }, 2200);
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(SITE.email).then(function () { done('Kopiert'); }, function () { selectEmail(); done('Markiert'); });
+      } else { selectEmail(); done('Markiert'); }
+    });
+    function selectEmail() {
+      var target = $('[data-site="email-link"]', btn.parentNode);
+      if (!target) return;
+      var range = document.createRange();
+      range.selectNodeContents(target);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    }
+  });
+
+  /* ---------- Consent bar (Google Fonts only load after "Akzeptieren") ---------- */
+  var CONSENT_KEY = 'kbj-consent';
+  var consentBar = $('#consent');
+  var consentTimer = 0;
+  function readConsent() { try { return JSON.parse(localStorage.getItem(CONSENT_KEY) || 'null'); } catch (e) { return null; } }
+  function writeConsent(fonts) {
+    try { localStorage.setItem(CONSENT_KEY, JSON.stringify({ v: 1, fonts: !!fonts, ts: new Date().toISOString() })); } catch (e) { /* ignore */ }
+  }
+  function showConsent() {
+    if (!consentBar) return;
+    clearTimeout(consentTimer);
+    consentBar.hidden = false;
+    requestAnimationFrame(function () { requestAnimationFrame(function () { consentBar.classList.add('is-visible'); }); });
+  }
+  function hideConsent() {
+    consentBar.classList.remove('is-visible');
+    consentTimer = setTimeout(function () { consentBar.hidden = true; }, reduceMotion.matches ? 0 : 320);
+  }
+  if (consentBar) {
+    consentBar.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-consent]');
+      if (!b) return;
+      var ok = b.dataset.consent === 'accept';
+      writeConsent(ok);
+      if (window.KBJ) {
+        if (ok) { window.KBJ.loadFonts(); window.KBJ.grantConsent(); }
+        else { window.KBJ.unloadFonts(); window.KBJ.consented = false; }
+      }
+      hideConsent();
+    });
+  }
+  $$('[data-consent-open]').forEach(function (b) { b.addEventListener('click', showConsent); });
+
+  /* ---------- Init ---------- */
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  fillSite(document);
+  renderGrindScale();
+  renderFeatured();
+  renderGuides();
+  applyFilter('all', false);
+  $$('[data-filter]').forEach(function (btn) { btn.addEventListener('click', function () { applyFilter(btn.dataset.filter, true); }); });
+  renderComments();
+  populateGuideSelect();
+  $$('form[data-form]').forEach(setupForm);
+  $$('[data-year]').forEach(function (el) { el.textContent = String(new Date().getFullYear()); });
+  render({ initial: true });
+  var consent = readConsent();
+  if (!consent || consent.v !== 1) setTimeout(showConsent, 600);
+})();</script>
+</body>
+</html>

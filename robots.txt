@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bohnenglueck-berlin.blog/sitemap.xml
